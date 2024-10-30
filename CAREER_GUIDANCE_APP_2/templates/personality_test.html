@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Test</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .question {
+            font-size: 1.8em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            max-width: 80%;
+        }
+        .answer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .answer-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 200px;
+        }
+        .answer-button:hover {
+            background-color: #45a049;
+        }
+        .answer-radio {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personality Test</h1>
+    {% if question %}
+        <div class="question">{{ question.question_text }}</div>
+        <form method="POST" class="answer-container">
+            {% for answer in answers %}
+                <div class="answer-radio">
+                    <input type="radio" id="answer{{ answer.answer_id }}" name="answer" value="{{ answer.answer_id }}" required>
+                    <label for="answer{{ answer.answer_id }}">{{ answer.answer_text }}</label>
+                </div>
+            {% endfor %}
+            <button type="submit" class="answer-button">Next</button>
+        </form>        
+    {% else %}
+        <p>No more questions available.</p>
+    {% endif %}
+</body>
+</html>

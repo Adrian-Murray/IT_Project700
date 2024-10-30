@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personality Test Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Your Personality Test Results</h1>
+        
+        <h2>Scores</h2>
+        <ul>
+            <li>Extroversion (E): {{ result_data.E }}</li>
+            <li>Introversion (I): {{ result_data.I }}</li>
+            <li>Sensing (S): {{ result_data.S }}</li>
+            <li>Intuition (N): {{ result_data.N }}</li>
+            <li>Thinking (T): {{ result_data.T }}</li>
+            <li>Feeling (F): {{ result_data.F }}</li>
+            <li>Judging (J): {{ result_data.J }}</li>
+            <li>Perceiving (P): {{ result_data.P }}</li>
+        </ul>
+
+        <h2>Your Dominant Personality Type</h2>
+        <p>Primary: {{ result_data.primary_personality_type }}</p>
+        <p>Alternative 1: {{ result_data.alternative_1 }}</p>
+        <p>Alternative 2: {{ result_data.alternative_2 }}</p>
+        <p>Alternative 3: {{ result_data.alternative_3 }}</p>
+
+        <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+    </div>
+</body>
+</html>

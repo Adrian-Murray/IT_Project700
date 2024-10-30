@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .dashboard-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .option {
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 20px;
+            background: #e9ecef;
+            border-radius: 5px;
+            text-align: center;
+            transition: background 0.3s;
+        }
+        .option:hover {
+            background: #d6d8db;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .chat-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .chat-button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to Your Dashboard</h1>
+    <div class="dashboard-options">
+        <div class="option">
+            <a href="{{ url_for('results') }}">
+                <i class="fas fa-chart-line"></i><br>
+                View Your Results
+            </a>
+        </div>
+        <div class="option">
+            <a href="{{ url_for('recommended_jobs') }}">
+                <i class="fas fa-briefcase"></i><br>
+                See Recommended Jobs
+            </a>
+        </div>
+        <div class="option">
+            <a href="{{ url_for('recommended_courses') }}">
+                <i class="fas fa-graduation-cap"></i><br>
+                See Recommended Courses
+            </a>
+        </div>
+        <div class="option">
+            <a href="{{ url_for('recommended_schools') }}">
+                <i class="fas fa-school"></i><br>
+                See Recommended Schools
+            </a>
+        </div>
+        <div class="option">
+            <a href="{{ url_for('cv_creator') }}">
+                <i class="fas fa-file-alt"></i><br>
+                Go to CV Creator
+            </a>
+        </div>
+        <div class="option">
+            <a href="{{ url_for('account_details') }}">
+                <i class="fas fa-user"></i><br>
+                View Account Details
+            </a>
+        </div>
+        <div class="option">
+            <a href="{{ url_for('chat_help') }}">
+                <i class="fas fa-comments"></i><br>
+                Chat for Help
+            </a>
+        </div>
+    </div>
+    <a href="{{ url_for('logout') }}" class="chat-button">Logout</a>
+</div>
+
+</body>
+</html>
