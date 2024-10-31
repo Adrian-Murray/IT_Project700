@@ -1,0 +1,137 @@
+/* styles.css */
+
+/* Resetting default browser styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base colors */
+:root {
+    --background-color: #e8f0f2; /* Soft light blue background */
+    --primary-color: #4CAF50; /* Green for buttons */
+    --secondary-color: #50b3a2; /* Gentle teal */
+    --accent-color: #ffb74d; /* Warm orange accent */
+    --text-color: #333333; /* Dark grey for main text */
+    --subtext-color: #555555; /* Slightly lighter grey for subtext */
+    --border-color: #dddddd; /* Light grey for borders */
+    --hover-color: #388E3C; /* Darker green for hover */
+    --input-background: #f0f0f0; /* Light grey background for inputs */
+    --input-border: #bbb; /* Border color for inputs */
+    --alert-background: #ffefc1; /* Light yellow for alerts */
+    --alert-text: #856404; /* Dark yellow for alert text */
+}
+
+/* Basic styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font family */
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Containers */
+.container {
+    max-width: 600px; /* Increased max-width for larger screens */
+    margin: auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+    text-align: center; /* Centered layout */
+}
+
+/* Headings */
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-size: 2.5rem; /* Larger font size for headings */
+    font-weight: 700; /* Bold weight for emphasis */
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 20px; /* Spacing between form groups */
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px; /* Increased padding for inputs */
+    border: 2px solid var(--input-border); /* Thicker border for visibility */
+    border-radius: 6px; /* More rounded corners */
+    background-color: var(--input-background);
+    transition: border-color 0.3s, background-color 0.3s; /* Smooth transition */
+    font-size: 1rem;
+}
+
+/* Focus styles for inputs */
+.form-control:focus {
+    border-color: var(blue);
+    outline: none;
+    background-color: #e8e8e8; /* Slightly darker grey on focus */
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 14px; /* Increased button padding */
+    background-color: var(--primary-color);
+    color: black; /* Black text inside buttons */
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold; /* Bold text for buttons */
+    transition: background-color 0.3s, transform 0.3s; /* Animation on hover */
+}
+
+.btn:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Links */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500; /* Medium weight for links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+
+/* Alert messages */
+.alert {
+    background-color: var(--alert-background);
+    color: var(--alert-text);
+    padding: 12px; /* Increased padding for alerts */
+    border: 1px solid #ffeeba; /* Border color */
+    border-radius: 6px; /* Rounded corners */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold; /* Bold text for alerts */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: var(--subtext-color);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 2rem; /* Smaller font size for heading */
+    }
+}
