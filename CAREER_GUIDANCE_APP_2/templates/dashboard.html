@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external stylesheet -->
+    <style>
+        /* Additional styling for layout */
+        .container {
+            max-width: 1200px; /* Set a maximum width for the container */
+            margin: 0 auto; /* Center the container */
+            padding: 20px; /* Add some padding */
+        }
+
+        .dashboard-layout {
+            display: flex; /* Use Flexbox for the layout */
+            justify-content: space-between; /* Space items evenly */
+            margin-bottom: 20px; /* Space below the dashboard options */
+        }
+
+        .dashboard-options {
+            display: flex; /* Use Flexbox for the layout */
+            flex-direction: column; /* Stack items vertically */
+            flex: 1; /* Allow left column to take available space */
+            margin-right: 20px; /* Space between left and right columns */
+        }
+
+        .dashboard-options-right {
+            display: flex; /* Use Flexbox for the layout */
+            flex-direction: column; /* Stack items vertically */
+            flex: 1; /* Allow right column to take available space */
+        }
+
+        .card {
+            margin: 10px 0; /* Space between cards */
+            padding: 20px; /* Padding inside cards */
+            text-align: center; /* Center text inside cards */
+            border: 1px solid #ccc; /* Optional border for card */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            transition: transform 0.3s; /* Smooth scaling on hover */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Slightly scale up the card on hover */
+        }
+
+        .option a {
+            text-decoration: none; /* Remove underline from links */
+            color: var(--primary-color); /* Use primary color for text */
+        }
+
+        .button {
+            background-color: var(--primary-color); /* Primary color for button */
+            color: white; /* White text for button */
+            padding: 10px 20px; /* Padding for button */
+            border-radius: 5px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s; /* Smooth transition */
+            width: 100%; /* Make the button full width */
+            font-size: 1.2em; /* Larger font size for visibility */
+            margin-top: 20px; /* Space above the button */
+        }
+
+        .button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+        .chat-button {
+            background-color: #28a745; /* Different color for chat button */
+        }
+
+        .chat-button:hover {
+            background-color: #218838; /* Darker shade on hover for chat button */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to Your Dashboard</h1>
+    <p style="text-align: center; color: var(--subtext-color);">Navigate through your options to explore personalized recommendations and manage your profile.</p>
+    
+    <div class="dashboard-layout">
+        <div class="dashboard-options">
+            <div class="card option">
+                <a href="{{ url_for('results') }}">
+                    <i class="fas fa-chart-line fa-3x" style="color: var(--primary-color);"></i><br>
+                    View Your Results
+                </a>
+            </div>
+            <div class="card option">
+                <a href="{{ url_for('cv_creator') }}">
+                    <i class="fas fa-file-alt fa-3x" style="color: var(--primary-color);"></i><br>
+                    Go to CV Creator
+                </a>
+            </div>
+            <div class="card option">
+                <a href="{{ url_for('account_details') }}">
+                    <i class="fas fa-user fa-3x" style="color: var(--primary-color);"></i><br>
+                    View Account Details
+                </a>
+            </div>
+        </div>
+
+        <div class="dashboard-options-right">
+            <div class="card option">
+                <a href="{{ url_for('recommended_jobs') }}">
+                    <i class="fas fa-briefcase fa-3x" style="color: var(--primary-color);"></i><br>
+                    See Recommended Jobs
+                </a>
+            </div>
+            <div class="card option">
+                <a href="{{ url_for('recommended_schools') }}">
+                    <i class="fas fa-school fa-3x" style="color: var(--primary-color);"></i><br>
+                    See Recommended Schools
+                </a>
+            </div>
+            <div class="card option">
+                <a href="{{ url_for('recommended_courses') }}">
+                    <i class="fas fa-graduation-cap fa-3x" style="color: var(--primary-color);"></i><br>
+                    See Recommended Courses
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <a href="{{ url_for('chat_help') }}" class="button chat-button">Chat for Help</a>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="{{ url_for('logout') }}" class="button">Logout</a>
+    </div>
+</div>
+
+</body>
+</html>

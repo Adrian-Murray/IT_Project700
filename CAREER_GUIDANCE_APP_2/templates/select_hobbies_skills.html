@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Hobbies and Skills</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        body {
+            background-color: #eef2f3; /* Light background color */
+            font-family: Arial, sans-serif; /* Consistent font */
+            padding: 20px; /* Add padding to body */
+        }
+
+        .container {
+            background-color: white; /* White background for the form */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px auto; /* Centering the container */
+            max-width: 600px; /* Maximum width for the form */
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+            font-size: 1.5rem; /* Slightly larger font size */
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            font-size: 1rem;
+            color: var(--text-color);
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease;
+            width: 100%;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            background-color: #ffffff;
+            outline: none;
+        }
+
+        .btn-primary {
+            width: 100%;
+            background-color: var(--primary-color);
+            border: none;
+            color: white;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--hover-color);
+        }
+
+        .btn-signup {
+            background-color: var(--primary-color); /* Blue color for sign-up button */
+            margin-top: 10px;
+        }
+
+        .btn-signup:hover {
+            background-color: #45a089; /* Darker shade on hover for sign-up button */
+        }
+
+        .form-section {
+            padding: 15px;
+            background-color: #f0f4f8;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Select Your Hobbies and Skills</h1>
+
+        <form method="POST" action="{{ url_for('select_hobbies_skills') }}">
+            <div class="form-section">
+                <h2>Select Your Hobbies</h2>
+                <div class="form-group" id="hobby-selection">
+                    <label for="main-hobby">Main Hobby:</label>
+                    <select class="form-control" id="main-hobby" name="main_hobby" required>
+                        <option value="">Select your main hobby</option>
+                        {% for hobby in hobbies %}
+                        <option value="{{ hobby.hobby_name }}">{{ hobby.hobby_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="additional-hobbies">Additional Hobbies:</label>
+                    <select class="form-control" id="additional-hobby-1" name="additional_hobbies" required>
+                        <option value="">Select additional hobby 1</option>
+                        {% for hobby in hobbies %}
+                        <option value="{{ hobby.hobby_name }}">{{ hobby.hobby_name }}</option>
+                        {% endfor %}
+                    </select>
+                    <select class="form-control" id="additional-hobby-2" name="additional_hobbies" required>
+                        <option value="">Select additional hobby 2</option>
+                        {% for hobby in hobbies %}
+                        <option value="{{ hobby.hobby_name }}">{{ hobby.hobby_name }}</option>
+                        {% endfor %}
+                    </select>
+                    <select class="form-control" id="additional-hobby-3" name="additional_hobbies" required>
+                        <option value="">Select additional hobby 3</option>
+                        {% for hobby in hobbies %}
+                        <option value="{{ hobby.hobby_name }}">{{ hobby.hobby_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                
+            </div>
+
+            <div class="form-section">
+                <h2>Select Your Skills</h2>
+                <div class="form-group" id="skill-selection">
+                    <label for="main-skill">Main Skill:</label>
+                    <select class="form-control" id="main-skill" name="main_skill" required>
+                        <option value="">Select your main skill</option>
+                        {% for skill in skills %}
+                        <option value="{{ skill.skill_name }}">{{ skill.skill_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="additional-skills">Additional Skills:</label>
+                    <select class="form-control" id="additional-skill-1" name="additional_skills" required>
+                        <option value="">Select additional skill 1</option>
+                        {% for skill in skills %}
+                        <option value="{{ skill.skill_name }}">{{ skill.skill_name }}</option>
+                        {% endfor %}
+                    </select>
+                    <select class="form-control" id="additional-skill-2" name="additional_skills" required>
+                        <option value="">Select additional skill 2</option>
+                        {% for skill in skills %}
+                        <option value="{{ skill.skill_name }}">{{ skill.skill_name }}</option>
+                        {% endfor %}
+                    </select>
+                    <select class="form-control" id="additional-skill-3" name="additional_skills" required>
+                        <option value="">Select additional skill 3</option>
+                        {% for skill in skills %}
+                        <option value="{{ skill.skill_name }}">{{ skill.skill_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary" style="background-color: #007bff; color: white;" onclick="window.location.href='/login';">Complete Signup</button>
+            <a href="/signup" class="btn btn-signup">Go to Sign Up</a>
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+    // Limit selection of additional hobbies to 3
+    $('#additional-hobby-1, #additional-hobby-2, #additional-hobby-3').on('change', function () {
+        var selectedValues = new Set();
+        $('#additional-hobby-1, #additional-hobby-2, #additional-hobby-3').each(function () {
+            if ($(this).val()) { // Only add non-empty values
+                selectedValues.add($(this).val());
+            }
+        });
+        if (selectedValues.size > 3) {
+            $(this).val(''); // Reset selection if more than 3 unique
+            alert("You can only select up to 3 unique additional hobbies.");
+        }
+    });
+
+    // Limit selection of additional skills to 3
+    $('#additional-skill-1, #additional-skill-2, #additional-skill-3').on('change', function () {
+        var selectedValues = new Set();
+        $('#additional-skill-1, #additional-skill-2, #additional-skill-3').each(function () {
+            if ($(this).val()) { // Only add non-empty values
+                selectedValues.add($(this).val());
+            }
+        });
+        if (selectedValues.size > 3) {
+            $(this).val(''); // Reset selection if more than 3 unique
+            alert("You can only select up to 3 unique additional skills.");
+        }
+    });
+});
+
+    </script>
+</body>
+
+</html>

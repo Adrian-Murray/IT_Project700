@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login to Your Account</h2>
+
+        <!-- Flash messages for login feedback -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alert alert-warning">
+                    {% for message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <!-- Login form -->
+        <form action="{{ url_for('login') }}" method="POST" class="form-container">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <!-- Sign-up link -->
+        <p class="text-center">Don't have an account? <a href="{{ url_for('signup') }}" class="link">Sign up here</a>.</p>
+        
+        <!-- Footer section -->
+        <footer class="footer">
+            <p>&copy; 2024 Career Guidance App. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <style>
+        /* Additional styles for the login page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px; /* Set max width for smaller devices */
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            transition: border-color 0.3s;
+            font-size: 1rem;
+            width: 100%; /* Ensure full width */
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            background-color: #ffffff;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF; /* Blue background for login button */
+            color: black; /* Black text inside the button */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1rem; /* Increased font size */
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        .text-center {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem; /* Slightly smaller font size for links */
+        }
+
+        .alert {
+            background-color: #ffefc1; /* Light yellow for alerts */
+            color: #856404; /* Dark yellow for alert text */
+            padding: 10px;
+            border: 1px solid #ffeeba; /* Border color */
+            border-radius: 4px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Footer styles */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: var(--subtext-color);
+        }
+
+        .link {
+            color: #007BFF; /* Blue color for the signup link */
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .link:hover {
+            text-decoration: underline; /* Underline on hover for clarity */
+        }
+    </style>
+</body>
+</html>

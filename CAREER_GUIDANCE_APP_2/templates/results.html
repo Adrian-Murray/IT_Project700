@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personality Test Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Your Personality Test Results</h1>
+        </header>
+
+        <main>
+            <section class="scores">
+                <h2>Scores</h2>
+                <ul class="score-list">
+                    <li>Extroversion (E): <strong>{{ result_data.E }}</strong></li>
+                    <li>Introversion (I): <strong>{{ result_data.I }}</strong></li>
+                    <li>Sensing (S): <strong>{{ result_data.S }}</strong></li>
+                    <li>Intuition (N): <strong>{{ result_data.N }}</strong></li>
+                    <li>Thinking (T): <strong>{{ result_data.T }}</strong></li>
+                    <li>Feeling (F): <strong>{{ result_data.F }}</strong></li>
+                    <li>Judging (J): <strong>{{ result_data.J }}</strong></li>
+                    <li>Perceiving (P): <strong>{{ result_data.P }}</strong></li>
+                </ul>
+            </section>
+
+            <section class="personality-type">
+                <h2>Your Dominant Personality Type</h2>
+                <p><strong>Primary:</strong> {{ result_data.primary_personality_type }}</p>
+                <p><strong>Alternative 1:</strong> {{ result_data.alternative_1 }}</p>
+                <p><strong>Alternative 2:</strong> {{ result_data.alternative_2 }}</p>
+                <p><strong>Alternative 3:</strong> {{ result_data.alternative_3 }}</p>
+            </section>
+
+            <section class="feedback">
+                <h2>What This Means for You</h2>
+                <p>Your dominant personality type can provide insights into your strengths and areas for growth. Consider how these traits influence your interactions and choices.</p>
+            </section>
+        </main>
+
+        <footer>
+            <a class="back-button" href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+        </footer>
+    </div>
+</body>
+</html>
