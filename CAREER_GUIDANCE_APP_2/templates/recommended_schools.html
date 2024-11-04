@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Schools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external stylesheet -->
+</head>
+<body>
+
+<div class="container">
+    <h1>Recommended Schools</h1>
+    <div class="school-list">
+        <div class="school">
+            <h3>School Name 1</h3>
+            <p>Description: This is a brief description of what School Name 1 offers, including special programs and features.</p>
+            <p><strong>Courses Offered:</strong> Course 1, Course 2, Course 3</p>
+        </div>
+        <div class="school">
+            <h3>School Name 2</h3>
+            <p>Description: This school provides a comprehensive curriculum focusing on both academics and extracurricular activities.</p>
+            <p><strong>Courses Offered:</strong> Course 1, Course 2, Course 3</p>
+        </div>
+        <div class="school">
+            <h3>School Name 3</h3>
+            <p>Description: Known for its innovative teaching methods and strong community involvement.</p>
+            <p><strong>Courses Offered:</strong> Course 1, Course 2, Course 3</p>
+        </div>
+        <!-- Add more school listings here -->
+    </div>
+    <a href="{{ url_for('dashboard') }}" class="dashboard-link">Back to Dashboard</a>
+</div>
+
+</body>
+</html>

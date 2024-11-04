@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Career Guidance App</title>
+    <style>
+        /* Inline CSS for immediate centering and color enhancement */
+        body {
+            background-color: #e8f0f2; /* Soft light blue background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Reset margin */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family */
+        }
+
+        .container {
+            background-color: white; /* White background for the container */
+            border-radius: 12px; /* Rounded corners */
+            padding: 40px; /* Padding inside the container */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+            text-align: center; /* Centered text inside the container */
+            max-width: 600px; /* Set a max width for the container */
+            width: 90%; /* Responsive width */
+        }
+
+        h1 {
+            color: black; /* Blue color for the title */
+            margin-bottom:0 20px; /* Spacing below title */
+        }
+
+        p {
+            color: #333; /* Dark grey for text */
+            margin-bottom: 20px; /* Spacing below paragraphs */
+        }
+
+        .btn {
+            background-color: #007BFF; /* Blue for buttons */
+            color: white; /* White text for buttons */
+            padding: 15px 30px; /* Increased padding for larger buttons */
+            font-size: 1.2rem; /* Larger font size */
+            border: none; /* No border */
+            border-radius: 6px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition for hover */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        .button-group {
+            margin-top: 20px; /* Spacing above button group */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container text-center">
+        <!-- App Title -->
+        <h1>Welcome to the Career Guidance App!</h1>
+        <p>Find your ideal career path based on your skills, hobbies, and personality.</p>
+
+        <!-- Intro Paragraph -->
+        <p>Please choose an option to continue:</p>
+
+        <!-- Navigation Buttons -->
+        <div class="button-group">
+            <a href="{{ url_for('signup') }}" class="btn">Sign Up</a>
+            <a href="{{ url_for('login') }}" class="btn">Login</a>
+        </div>
+    </div>
+
+</body>
+</html>
