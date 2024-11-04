@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>CV Creator</h1>
+        <p class="subtitle">Easily create and customize your CV</p>
+    </header>
+
+    <main class="cv-form">
+        <form action="{{ url_for('create_cv') }}" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Professional Summary</legend>
+                <textarea id="summary" name="summary" rows="4" placeholder="Brief summary of your professional experience..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <input type="text" name="skills" placeholder="e.g., Project Management, Java, HTML" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Experience</legend>
+                <textarea id="experience" name="experience" rows="5" placeholder="List your previous job roles and responsibilities..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Education</legend>
+                <input type="text" name="education" placeholder="e.g., BSc in Computer Science" required>
+            </fieldset>
+
+            <button type="submit" class="submit-button">Generate CV</button>
+        </form>
+    </main>
+
+    <footer>
+        <a href="{{ url_for('dashboard') }}" class="dashboard-link"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+    </footer>
+</div>
+
+</body>
+</html>

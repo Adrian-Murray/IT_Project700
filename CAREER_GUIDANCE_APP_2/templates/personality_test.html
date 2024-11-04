@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Test</title>
+    <style>
+        /* Additional styling to improve usability and aesthetics */
+
+        body {
+            display: flex;
+            justify-content: center; /* Center the container horizontally */
+            align-items: center; /* Center the container vertically */
+            height: 100vh; /* Full height of the viewport */
+            background-color: var(--background-color); /* Soft background color */
+            font-family: Arial, sans-serif; /* Consistent font for better readability */
+        }
+
+        .container {
+            max-width: 600px; /* Limit width for larger screens */
+            padding: 40px; /* Increased padding for better spacing */
+            border-radius: 10px; /* Rounded corners */
+            background-color: #ffffff; /* White background for the container */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            text-align: center; /* Centered text */
+        }
+
+        h1 {
+            font-size: 2.5rem; /* Larger font size for the heading */
+            margin-bottom: 20px;
+            color: var(--primary-color); /* Primary color for heading */
+        }
+
+        .question {
+            font-size: 1.5rem; /* Larger font for questions */
+            margin-bottom: 30px; /* Space below question */
+            color: var(--primary-color);
+        }
+
+        .answer-container {
+            margin-top: 20px; /* Spacing above the answers */
+            display: flex; /* Flexbox for alignment */
+            flex-direction: column; /* Stack answers vertically */
+            align-items: center; /* Center align answers */
+        }
+
+        .answer-radio {
+            margin: 10px 0; /* Spacing between answers */
+            padding: 15px; /* Padding for better touch targets */
+            border: 2px solid var(--border-color);
+            border-radius: 5px; /* Rounded corners */
+            background-color: #f9f9f9; /* Slight background color for answers */
+            transition: background-color 0.3s; /* Smooth transition on hover */
+            width: 100%; /* Full width for answer options */
+            text-align: left; /* Left align text */
+            cursor: pointer; /* Pointer cursor for better UX */
+        }
+
+        .answer-radio:hover {
+            background-color: var(--secondary-color); /* Change background on hover */
+        }
+
+        input[type="radio"] {
+            transform: scale(1.5); /* Increase the size of radio buttons */
+            margin-right: 15px; /* Space between radio button and label */
+            cursor: pointer; /* Pointer cursor for better UX */
+        }
+
+        .answer-label {
+            font-size: 1.2rem; /* Larger font size for answers */
+            cursor: pointer; /* Pointer cursor for labels */
+        }
+
+        .answer-button {
+            width: 100%; /* Full-width button */
+            font-size: 1.5rem; /* Increase button text size */
+            padding: 15px; /* Add padding for larger touch area */
+            background-color: #007BFF; /* Blue for button */
+            color: #ffffff; /* White text for button */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor for button */
+            transition: background-color 0.3s; /* Smooth transition */
+            margin-top: 20px; /* Space above button */
+        }
+
+        .answer-button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+        .message {
+            margin-top: 20px; /* Space for the message */
+            font-size: 1.2rem; /* Slightly larger font for messages */
+            color: var(--secondary-color); /* Secondary color for messages */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personality Test</h1>
+        
+        {% if question %}
+            <div class="question">{{ question.question_text }}</div>
+            <form method="POST" class="answer-container">
+                
+                {% for answer in answers %}
+                    <div class="answer-radio">
+                        <input type="radio" id="answer{{ answer.answer_id }}" name="answer" value="{{ answer.answer_id }}" required>
+                        <label for="answer{{ answer.answer_id }}" class="answer-label">{{ answer.answer_text }}</label>
+                    </div>
+                {% endfor %}
+                
+                <button type="submit" class="answer-button">Next</button>
+            </form>   
+        
+        {% else %}
+            <div class="message">
+                <p>No more questions available.</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

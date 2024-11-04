@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-details {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .completion-status {
+            flex: 1;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        .change-button {
+            font-size: 0.8em;
+            color: blue;
+            cursor: pointer;
+        }
+
+        .change-button:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="user-details">
+            <h1>Account Details</h1>
+            <p><strong>Name:</strong> {{ user.name }}</p>
+            <p><strong>Surname:</strong> {{ user.surname }}</p>
+            <p><strong>Date of Birth:</strong> {{ user.date_of_birth }}</p>
+            <p><strong>Email:</strong> {{ user.email }}</p>
+            <p><strong>Password:</strong> *****</p>
+            <p class="change-button" onclick="location.href='{{ url_for('change_password') }}?action=password'">
+                Change Password</p>
+        </div>
+
+        <div class="completion-status">
+            <h2>Completion Status</h2>
+            <p><strong>Personality Test Completed:</strong> {{ 'Yes' if personality_test_completed else 'No' }}</p>
+            <p><strong>Hobbies Selection Completed:</strong> {{ 'Yes' if hobbies_completed else 'No' }}</p>
+            <p><strong>Skills Selection Completed:</strong> {{ 'Yes' if skills_completed else 'No' }}</p>
+        </div>
+    </div>
+    <button onclick="location.href='{{ url_for('dashboard') }}'">Back to Dashboard</button> <!-- Dashboard button -->
+</body>
+
+</html>

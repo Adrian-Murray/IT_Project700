@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personality Test Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        .score-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .score-list li {
+            margin: 5px 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-button {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Your Personality Test Results</h1>
+        </header>
+
+        <main>
+            <section class="scores">
+                <h2>Scores</h2>
+                <ul class="score-list">
+                    <li>Extroversion (E): <strong>{{ result_data.E }}</strong></li>
+                    <li>Introversion (I): <strong>{{ result_data.I }}</strong></li>
+                    <li>Sensing (S): <strong>{{ result_data.S }}</strong></li>
+                    <li>Intuition (N): <strong>{{ result_data.N }}</strong></li>
+                    <li>Thinking (T): <strong>{{ result_data.T }}</strong></li>
+                    <li>Feeling (F): <strong>{{ result_data.F }}</strong></li>
+                    <li>Judging (J): <strong>{{ result_data.J }}</strong></li>
+                    <li>Perceiving (P): <strong>{{ result_data.P }}</strong></li>
+                </ul>
+            </section>
+
+            <section class="personality-type">
+                <h2>Your Dominant Personality Type</h2>
+                <p><strong>Primary:</strong> {{ result_data.primary_personality_type }}</p>
+                <p><strong>Alternative 1:</strong> {{ result_data.alternative_1 }}</p>
+                <p><strong>Alternative 2:</strong> {{ result_data.alternative_2 }}</p>
+                <p><strong>Alternative 3:</strong> {{ result_data.alternative_3 }}</p>
+            </section>
+
+            <section class="hobbies-skills">
+                <h2>Your Hobbies</h2>
+                {% if hobbies %}
+                <ul>
+                    {% for hobby in hobbies %}
+                    <li>{{ hobby }}</li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p>No hobbies found.</p>
+                {% endif %}
+
+                <h2>Your Skills</h2>
+                {% if skills %}
+                <ul>
+                    {% for skill in skills %}
+                    <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p>No skills found.</p>
+                {% endif %}
+            </section>
+
+        </main>
+
+        <footer>
+            <a class="back-button" href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+        </footer>
+    </div>
+</body>
+
+</html>
