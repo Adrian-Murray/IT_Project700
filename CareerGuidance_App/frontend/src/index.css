@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  
+  body {
+    @apply bg-gray-50;
+  }
+
+  h1 {
+    @apply text-4xl font-bold text-gray-900;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold text-gray-900;
+  }
+
+  h3 {
+    @apply text-xl font-semibold text-gray-900;
+  }
+}
+
+/* Custom component classes */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+  }
+
+  .btn-secondary {
+    @apply btn bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 focus:ring-primary-500;
+  }
+
+  .input {
+    @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm;
+  }
+
+  .card {
+    @apply bg-white shadow sm:rounded-lg;
+  }
+
+  .card-body {
+    @apply px-4 py-5 sm:p-6;
+  }
+
+  .form-group {
+    @apply space-y-1;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-gray-700;
+  }
+
+  .form-error {
+    @apply mt-2 text-sm text-red-600;
+  }
+
+  .alert {
+    @apply rounded-md p-4;
+  }
+
+  .alert-success {
+    @apply alert bg-green-50 text-green-700;
+  }
+
+  .alert-error {
+    @apply alert bg-red-50 text-red-700;
+  }
+
+  .alert-warning {
+    @apply alert bg-yellow-50 text-yellow-700;
+  }
+
+  .alert-info {
+    @apply alert bg-blue-50 text-blue-700;
+  }
+
+  .navbar {
+    @apply bg-white shadow;
+  }
+
+  .navbar-content {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .sidebar {
+    @apply flex flex-col min-h-0 bg-gray-800;
+  }
+
+  .sidebar-link {
+    @apply text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium;
+  }
+
+  .sidebar-link-active {
+    @apply bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium;
+  }
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .text-shadow-md {
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.12);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 15px 15px 30px rgba(0,0,0,0.11);
+  }
+
+  .text-shadow-none {
+    text-shadow: none;
+  }
+}

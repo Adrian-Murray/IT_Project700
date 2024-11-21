@@ -1,0 +1,501 @@
+Age,Course,Universities_ID,Faculty/Department,Duration,Key Skills,Dominance,Extraversion,Patience,Formality,Recommended Career
+30,LLB,8,ECONOMICS,1,"Programming,Data Structures",2,3,2,7,Public Defender
+23,LLB,6,SCIENCE,2,"Programming,Data Structures",9,2,3,3,Public Defender
+34,Diploma in Crop Production,3,SCIENCE,3,"Legal Research,Negotiation",4,4,5,5,Agronomist
+27,BEng Industrial Engineering,9,ENGINEERING,4,"Programming,Data Structures",3,2,5,7,Operations Manager
+25,BCOM Logistics,7,HEALTH,1,"Legal Research,Negotiation",3,1,2,9,Logistics Manager
+33,BEng Industrial Engineering,6,SCIENCE,4,"Programming,Data Structures",1,9,9,3,Operations Manager
+26,BCOM Economics,3,SCIENCE,1,"Legal Research,Negotiation",6,8,5,3,Economist
+31,MBBCH Medicine and Surgery,9,ENGINEERING,3,"Legal Research,Negotiation",9,1,8,8,General Practitioner
+29,BCOM Accounting,8,SCIENCE,1,"Legal Research,Negotiation",5,3,7,3,Accountant
+20,MBBCH Medicine and Surgery,4,ENGINEERING,1,"Financial Analysis,Excel",4,6,9,6,General Practitioner
+34,Diploma in Information Technology,5,LAW,2,"Programming,Data Structures",5,4,3,7,IT Support Specialist
+22,Fitting and Turning,1,LAW,1,"Legal Research,Negotiation",8,4,5,9,Mechanical Technician
+24,Diploma in Information Technology,9,ENGINEERING,2,"Programming,Data Structures",4,5,4,6,IT Support Specialist
+25,Bachelor of Computer Science,1,SCIENCE,3,"Legal Research,Negotiation",9,7,5,9,Software Engineer
+28,BEng Industrial Engineering,4,ECONOMICS,3,"Legal Research,Negotiation",3,5,4,3,Operations Manager
+22,Bachelor of Computer Science,8,ECONOMICS,3,"Programming,Data Structures",8,3,1,3,Software Engineer
+34,Diploma in Information Technology,8,HEALTH,2,"Legal Research,Negotiation",6,1,3,2,IT Support Specialist
+26,Boiler Making,4,ENGINEERING,3,"Financial Analysis,Excel",9,8,9,9,Welding Technician
+31,Bachelor of Computer Science,9,SCIENCE,2,"Financial Analysis,Excel",8,1,1,9,Software Engineer
+20,Bed Degree in Foundation Phase Teaching,9,HEALTH,3,"Financial Analysis,Excel",4,8,4,9,Primary School Teacher
+24,Boiler Making,8,HEALTH,4,"Financial Analysis,Excel",4,9,8,8,Welding Technician
+34,Bed Degree in Foundation Phase Teaching,3,SCIENCE,4,"Financial Analysis,Excel",9,7,1,3,Primary School Teacher
+26,BEng Industrial Engineering,7,LAW,3,"Programming,Data Structures",1,4,7,2,Operations Manager
+34,Fitting and Turning,3,LAW,1,"Legal Research,Negotiation",6,1,9,7,Mechanical Technician
+24,BEng Industrial Engineering,5,SCIENCE,4,"Programming,Data Structures",2,2,4,3,Operations Manager
+27,LLB,1,HEALTH,2,"Programming,Data Structures",8,4,2,7,Public Defender
+26,Bachelor of Computer Science,8,LAW,2,"Legal Research,Negotiation",7,8,6,7,Software Engineer
+31,MBBCH Medicine and Surgery,3,LAW,2,"Programming,Data Structures",5,1,1,3,General Practitioner
+34,BCOM Accounting,9,SCIENCE,1,"Legal Research,Negotiation",7,8,5,2,Accountant
+31,Bachelor of Nursing,5,ENGINEERING,1,"Programming,Data Structures",5,8,5,3,Registered Nurse
+32,BSc Geology and Geography,3,HEALTH,3,"Legal Research,Negotiation",1,5,4,3,Geologist
+24,BSc Geology and Geography,9,ECONOMICS,3,"Financial Analysis,Excel",2,4,3,5,Geologist
+24,BEng Civil Engineering,1,LAW,1,"Programming,Data Structures",8,2,2,7,Civil Engineer
+32,BEng Civil Engineering,3,SCIENCE,2,"Programming,Data Structures",7,6,3,3,Civil Engineer
+20,BCOM Law,1,ENGINEERING,4,"Legal Research,Negotiation",1,1,1,8,Corporate Lawyer
+21,BSc in Agriculture in Animal Science,6,HEALTH,2,"Legal Research,Negotiation",2,5,3,6,Agronomist
+28,BCOM Logistics,6,HEALTH,4,"Financial Analysis,Excel",8,1,8,9,Logistics Manager
+31,BCOM Accounting,2,SCIENCE,1,"Programming,Data Structures",1,2,1,2,Accountant
+31,BCOM Economics,8,LAW,1,"Legal Research,Negotiation",9,8,2,8,Economist
+34,BCOM Economics,7,LAW,3,"Financial Analysis,Excel",5,2,8,5,Economist
+29,BCOM Logistics,7,ENGINEERING,1,"Programming,Data Structures",3,3,2,9,Logistics Manager
+33,Diploma in Crop Production,5,ECONOMICS,2,"Programming,Data Structures",2,1,7,9,Agronomist
+34,BCOM Accounting,6,SCIENCE,1,"Legal Research,Negotiation",2,5,6,5,Accountant
+20,Bachelor of Nursing,7,ENGINEERING,4,"Legal Research,Negotiation",8,6,9,6,Registered Nurse
+22,BCOM Law,6,LAW,1,"Financial Analysis,Excel",6,1,5,2,Corporate Lawyer
+24,LLB,9,ECONOMICS,2,"Financial Analysis,Excel",2,5,7,5,Public Defender
+22,Diploma in Information Technology,1,ENGINEERING,4,"Legal Research,Negotiation",1,6,7,5,IT Support Specialist
+25,BCOM Logistics,2,SCIENCE,4,"Programming,Data Structures",4,6,6,6,Logistics Manager
+28,Fitting and Turning,3,LAW,4,"Programming,Data Structures",4,9,8,2,Mechanical Technician
+31,LLB,7,ENGINEERING,1,"Financial Analysis,Excel",5,4,5,4,Public Defender
+34,LLB,7,SCIENCE,3,"Financial Analysis,Excel",1,8,6,3,Public Defender
+25,BCOM Logistics,1,ENGINEERING,2,"Financial Analysis,Excel",7,1,2,2,Logistics Manager
+21,BSc in Agriculture in Animal Science,3,HEALTH,4,"Programming,Data Structures",3,8,1,5,Agronomist
+30,BCOM Logistics,9,SCIENCE,4,"Programming,Data Structures",2,3,4,6,Logistics Manager
+30,BCOM Accounting,2,LAW,1,"Programming,Data Structures",2,1,3,1,Accountant
+23,Bed Degree in Foundation Phase Teaching,6,SCIENCE,2,"Financial Analysis,Excel",5,4,8,3,Primary School Teacher
+20,BCOM Economics,4,ECONOMICS,1,"Financial Analysis,Excel",2,6,8,5,Economist
+26,BCOM Finance,6,ENGINEERING,2,"Financial Analysis,Excel",2,7,4,5,Financial Analyst
+31,MBBCH Medicine and Surgery,2,SCIENCE,1,"Legal Research,Negotiation",2,4,4,7,General Practitioner
+34,BCOM Economics,9,LAW,1,"Legal Research,Negotiation",3,4,8,5,Economist
+29,BCOM Economics,8,SCIENCE,3,"Legal Research,Negotiation",3,4,8,2,Economist
+32,BCOM Accounting,6,SCIENCE,3,"Legal Research,Negotiation",4,2,6,8,Accountant
+30,LLB,5,HEALTH,1,"Programming,Data Structures",8,6,4,2,Public Defender
+23,BCOM Finance,8,LAW,1,"Legal Research,Negotiation",3,7,9,2,Financial Analyst
+26,BCOM Logistics,4,HEALTH,4,"Legal Research,Negotiation",9,4,1,2,Logistics Manager
+25,BCOM Logistics,8,LAW,3,"Legal Research,Negotiation",5,5,9,7,Logistics Manager
+25,BCOM Finance,7,HEALTH,3,"Programming,Data Structures",7,3,4,4,Financial Analyst
+31,Diploma in Information Technology,7,LAW,2,"Programming,Data Structures",7,9,9,4,IT Support Specialist
+20,BEng Civil Engineering,5,HEALTH,1,"Financial Analysis,Excel",5,4,1,3,Civil Engineer
+32,Diploma in Information Technology,2,ECONOMICS,1,"Financial Analysis,Excel",1,6,2,2,IT Support Specialist
+21,BEng Industrial Engineering,1,SCIENCE,3,"Legal Research,Negotiation",6,5,6,7,Operations Manager
+34,BCOM Economics,4,HEALTH,3,"Legal Research,Negotiation",7,3,4,6,Economist
+24,Bed Degree in Foundation Phase Teaching,7,ECONOMICS,4,"Financial Analysis,Excel",6,1,3,1,Primary School Teacher
+21,Diploma in Information Technology,9,SCIENCE,4,"Legal Research,Negotiation",5,4,5,5,IT Support Specialist
+21,LLB,8,HEALTH,4,"Financial Analysis,Excel",3,6,7,8,Public Defender
+29,LLB,4,LAW,1,"Programming,Data Structures",9,5,3,9,Public Defender
+21,MBBCH Medicine and Surgery,4,LAW,2,"Programming,Data Structures",2,4,3,3,General Practitioner
+27,BCOM Law,1,ENGINEERING,2,"Legal Research,Negotiation",5,9,4,5,Corporate Lawyer
+26,MBBCH Medicine and Surgery,6,LAW,2,"Programming,Data Structures",1,3,4,4,General Practitioner
+31,Diploma in Crop Production,9,HEALTH,2,"Legal Research,Negotiation",5,2,1,3,Agronomist
+30,BCOM Law,8,LAW,3,"Financial Analysis,Excel",4,7,3,3,Corporate Lawyer
+34,LLB,9,HEALTH,2,"Financial Analysis,Excel",1,6,7,5,Public Defender
+34,BEng Civil Engineering,2,LAW,1,"Programming,Data Structures",7,6,3,7,Civil Engineer
+28,Diploma in Crop Production,4,LAW,2,"Programming,Data Structures",7,5,3,6,Agronomist
+29,LLB,7,HEALTH,3,"Programming,Data Structures",1,9,4,5,Public Defender
+32,MBBCH Medicine and Surgery,9,ECONOMICS,2,"Legal Research,Negotiation",7,7,5,7,General Practitioner
+28,BSc Geology and Geography,9,SCIENCE,2,"Legal Research,Negotiation",4,5,8,1,Geologist
+25,Boiler Making,3,SCIENCE,3,"Legal Research,Negotiation",1,4,5,1,Welding Technician
+26,Diploma in Crop Production,6,HEALTH,1,"Legal Research,Negotiation",5,2,4,3,Agronomist
+32,BEng Civil Engineering,3,HEALTH,1,"Programming,Data Structures",4,1,3,1,Civil Engineer
+28,BCOM Logistics,6,HEALTH,4,"Financial Analysis,Excel",3,1,2,1,Logistics Manager
+21,Diploma in Information Technology,9,LAW,2,"Financial Analysis,Excel",8,1,8,3,IT Support Specialist
+22,LLB,1,LAW,2,"Financial Analysis,Excel",9,6,2,6,Public Defender
+28,BCOM Logistics,9,HEALTH,4,"Financial Analysis,Excel",3,4,2,9,Logistics Manager
+20,MBBCH Medicine and Surgery,5,ECONOMICS,4,"Legal Research,Negotiation",6,3,6,3,General Practitioner
+29,Boiler Making,1,HEALTH,4,"Financial Analysis,Excel",3,6,8,9,Welding Technician
+32,Fitting and Turning,6,ENGINEERING,2,"Legal Research,Negotiation",5,2,7,9,Mechanical Technician
+29,BSc in Agriculture in Animal Science,4,ECONOMICS,3,"Legal Research,Negotiation",6,3,7,1,Agronomist
+23,Bachelor of Computer Science,6,HEALTH,1,"Programming,Data Structures",6,2,6,5,Software Engineer
+26,Bachelor of Computer Science,6,LAW,2,"Financial Analysis,Excel",8,8,1,6,Software Engineer
+24,Bed Degree in Foundation Phase Teaching,6,ENGINEERING,3,"Legal Research,Negotiation",6,3,9,7,Primary School Teacher
+24,BEng Civil Engineering,1,LAW,1,"Financial Analysis,Excel",5,2,6,5,Civil Engineer
+20,Diploma in Crop Production,9,LAW,2,"Legal Research,Negotiation",5,9,4,5,Agronomist
+22,BCOM Finance,1,LAW,1,"Financial Analysis,Excel",5,2,1,4,Financial Analyst
+29,MBBCH Medicine and Surgery,2,SCIENCE,3,"Programming,Data Structures",2,9,3,9,General Practitioner
+25,Bachelor of Computer Science,2,ECONOMICS,4,"Programming,Data Structures",5,4,6,5,Software Engineer
+31,Diploma in Crop Production,9,LAW,4,"Programming,Data Structures",2,1,6,4,Agronomist
+33,BSc in Agriculture in Animal Science,1,HEALTH,2,"Financial Analysis,Excel",2,4,2,1,Agronomist
+24,BSc in Agriculture in Animal Science,6,LAW,2,"Financial Analysis,Excel",1,9,1,7,Agronomist
+24,Bachelor of Computer Science,4,SCIENCE,2,"Programming,Data Structures",1,1,7,1,Software Engineer
+34,Bachelor of Computer Science,2,ENGINEERING,1,"Legal Research,Negotiation",3,5,7,1,Software Engineer
+34,BCOM Accounting,3,ECONOMICS,3,"Legal Research,Negotiation",5,8,3,9,Accountant
+24,BEngTech Industrial Engineering,4,ENGINEERING,4,"Programming,Data Structures",1,3,5,8,Industrial Engineer
+26,BSc Geology and Geography,6,ECONOMICS,1,"Financial Analysis,Excel",2,7,8,6,Geologist
+33,BEng Industrial Engineering,7,HEALTH,4,"Legal Research,Negotiation",2,1,9,7,Operations Manager
+28,Boiler Making,6,SCIENCE,3,"Programming,Data Structures",6,1,9,6,Welding Technician
+26,Diploma in Information Technology,7,ECONOMICS,3,"Legal Research,Negotiation",5,8,5,7,IT Support Specialist
+30,BCOM Law,3,HEALTH,2,"Legal Research,Negotiation",3,9,2,8,Corporate Lawyer
+20,BCOM Economics,5,ENGINEERING,1,"Programming,Data Structures",8,5,5,6,Economist
+34,Bachelor of Nursing,6,SCIENCE,4,"Programming,Data Structures",4,6,4,5,Registered Nurse
+29,BCOM Finance,6,ENGINEERING,1,"Financial Analysis,Excel",2,2,7,1,Financial Analyst
+34,BEng Industrial Engineering,2,LAW,3,"Programming,Data Structures",6,4,6,4,Operations Manager
+26,Diploma in Crop Production,6,ENGINEERING,3,"Programming,Data Structures",1,7,2,4,Agronomist
+33,Diploma in Information Technology,2,ENGINEERING,1,"Financial Analysis,Excel",2,2,7,8,IT Support Specialist
+23,MBBCH Medicine and Surgery,3,LAW,1,"Legal Research,Negotiation",9,7,5,4,General Practitioner
+32,Bed Degree in Foundation Phase Teaching,5,ENGINEERING,4,"Legal Research,Negotiation",5,5,8,6,Primary School Teacher
+25,Fitting and Turning,9,ECONOMICS,2,"Programming,Data Structures",9,6,9,4,Mechanical Technician
+20,BEngTech Industrial Engineering,5,SCIENCE,1,"Financial Analysis,Excel",4,1,7,6,Industrial Engineer
+23,MBBCH Medicine and Surgery,1,HEALTH,1,"Legal Research,Negotiation",7,3,1,4,General Practitioner
+29,BCOM Logistics,1,SCIENCE,2,"Programming,Data Structures",6,3,7,7,Logistics Manager
+23,BCOM Accounting,8,ENGINEERING,2,"Legal Research,Negotiation",4,8,2,1,Accountant
+30,Boiler Making,3,ENGINEERING,1,"Programming,Data Structures",3,1,4,5,Welding Technician
+28,BCOM Finance,8,ENGINEERING,4,"Financial Analysis,Excel",4,9,2,2,Financial Analyst
+26,Diploma in Information Technology,4,ENGINEERING,3,"Programming,Data Structures",1,4,9,9,IT Support Specialist
+25,BSc in Agriculture in Animal Science,4,ENGINEERING,3,"Legal Research,Negotiation",1,1,2,9,Agronomist
+34,BEng Industrial Engineering,7,HEALTH,2,"Legal Research,Negotiation",5,5,8,5,Operations Manager
+32,Boiler Making,6,LAW,3,"Financial Analysis,Excel",6,1,7,1,Welding Technician
+21,BCOM Logistics,7,ENGINEERING,4,"Financial Analysis,Excel",1,8,8,8,Logistics Manager
+33,BEngTech Industrial Engineering,4,SCIENCE,2,"Legal Research,Negotiation",4,5,2,7,Industrial Engineer
+34,Diploma in Crop Production,4,ECONOMICS,2,"Programming,Data Structures",1,2,3,4,Agronomist
+26,Bed Degree in Foundation Phase Teaching,4,SCIENCE,3,"Programming,Data Structures",2,2,5,2,Primary School Teacher
+23,BCOM Law,4,ECONOMICS,2,"Programming,Data Structures",8,1,9,5,Corporate Lawyer
+22,Diploma in Information Technology,7,ECONOMICS,2,"Programming,Data Structures",7,3,8,6,IT Support Specialist
+20,Fitting and Turning,7,HEALTH,4,"Financial Analysis,Excel",5,2,8,4,Mechanical Technician
+28,BSc in Agriculture in Animal Science,7,ENGINEERING,1,"Legal Research,Negotiation",3,8,4,2,Agronomist
+33,BEng Civil Engineering,7,ENGINEERING,1,"Programming,Data Structures",1,5,6,2,Civil Engineer
+27,BCOM Logistics,6,HEALTH,4,"Programming,Data Structures",1,1,4,2,Logistics Manager
+25,Diploma in Crop Production,4,HEALTH,3,"Legal Research,Negotiation",2,3,3,6,Agronomist
+21,BCOM Economics,4,ECONOMICS,1,"Programming,Data Structures",5,6,8,3,Economist
+30,BCOM Logistics,1,HEALTH,2,"Programming,Data Structures",9,6,1,9,Logistics Manager
+28,BCOM Law,5,SCIENCE,4,"Financial Analysis,Excel",7,8,6,4,Corporate Lawyer
+25,Diploma in Information Technology,5,ENGINEERING,1,"Financial Analysis,Excel",2,4,7,1,IT Support Specialist
+27,Bachelor of Nursing,4,HEALTH,3,"Legal Research,Negotiation",6,6,1,5,Registered Nurse
+20,BCOM Accounting,7,ENGINEERING,1,"Programming,Data Structures",4,7,2,5,Accountant
+22,BCOM Finance,7,SCIENCE,2,"Financial Analysis,Excel",9,3,9,6,Financial Analyst
+22,Bachelor of Nursing,6,ECONOMICS,2,"Financial Analysis,Excel",7,2,7,6,Registered Nurse
+20,BCOM Finance,5,LAW,1,"Financial Analysis,Excel",9,4,5,1,Financial Analyst
+22,BEng Industrial Engineering,5,SCIENCE,2,"Financial Analysis,Excel",4,1,8,7,Operations Manager
+33,BEngTech Industrial Engineering,4,LAW,3,"Programming,Data Structures",3,9,5,6,Industrial Engineer
+25,BSc Geology and Geography,3,HEALTH,3,"Programming,Data Structures",2,8,3,1,Geologist
+26,Bachelor of Computer Science,4,ECONOMICS,2,"Legal Research,Negotiation",8,3,3,4,Software Engineer
+20,Fitting and Turning,2,SCIENCE,4,"Programming,Data Structures",1,6,9,5,Mechanical Technician
+31,LLB,4,SCIENCE,2,"Legal Research,Negotiation",1,2,6,5,Public Defender
+22,BEng Industrial Engineering,1,ENGINEERING,2,"Financial Analysis,Excel",7,3,4,6,Operations Manager
+29,BCOM Accounting,4,HEALTH,2,"Programming,Data Structures",5,6,1,5,Accountant
+31,MBBCH Medicine and Surgery,4,LAW,4,"Legal Research,Negotiation",2,9,8,3,General Practitioner
+30,Fitting and Turning,3,HEALTH,3,"Legal Research,Negotiation",1,7,3,3,Mechanical Technician
+33,BCOM Law,4,ECONOMICS,4,"Financial Analysis,Excel",7,3,8,8,Corporate Lawyer
+31,BSc Geology and Geography,5,HEALTH,4,"Financial Analysis,Excel",3,5,3,1,Geologist
+26,Fitting and Turning,1,LAW,3,"Programming,Data Structures",6,8,9,5,Mechanical Technician
+29,BEng Civil Engineering,2,HEALTH,2,"Programming,Data Structures",7,6,5,1,Civil Engineer
+21,Diploma in Crop Production,4,HEALTH,3,"Legal Research,Negotiation",8,1,3,6,Agronomist
+26,BCOM Economics,4,ECONOMICS,2,"Programming,Data Structures",5,1,2,2,Economist
+30,BSc Geology and Geography,2,ECONOMICS,2,"Legal Research,Negotiation",5,9,8,7,Geologist
+32,Diploma in Information Technology,5,HEALTH,4,"Financial Analysis,Excel",6,9,6,5,IT Support Specialist
+27,BEngTech Industrial Engineering,7,ECONOMICS,4,"Programming,Data Structures",6,4,3,7,Industrial Engineer
+26,Diploma in Information Technology,1,LAW,3,"Programming,Data Structures",4,9,3,9,IT Support Specialist
+31,BSc in Agriculture in Animal Science,5,ECONOMICS,1,"Financial Analysis,Excel",3,8,7,8,Agronomist
+33,Diploma in Crop Production,6,ECONOMICS,4,"Financial Analysis,Excel",8,2,4,5,Agronomist
+28,BCOM Law,7,ECONOMICS,2,"Legal Research,Negotiation",7,2,7,4,Corporate Lawyer
+25,LLB,3,ENGINEERING,1,"Legal Research,Negotiation",9,3,7,4,Public Defender
+29,BEngTech Industrial Engineering,6,SCIENCE,3,"Legal Research,Negotiation",5,1,6,3,Industrial Engineer
+23,LLB,8,ECONOMICS,2,"Programming,Data Structures",9,6,5,7,Public Defender
+24,BCOM Economics,5,HEALTH,3,"Legal Research,Negotiation",4,8,5,9,Economist
+25,BEng Industrial Engineering,2,ECONOMICS,4,"Programming,Data Structures",1,1,7,6,Operations Manager
+20,BCOM Accounting,7,SCIENCE,3,"Programming,Data Structures",8,2,2,5,Accountant
+24,BCOM Economics,3,HEALTH,4,"Financial Analysis,Excel",7,9,2,1,Economist
+24,Diploma in Crop Production,7,SCIENCE,1,"Financial Analysis,Excel",2,2,2,7,Agronomist
+21,BEng Industrial Engineering,2,LAW,4,"Legal Research,Negotiation",7,6,4,2,Operations Manager
+25,LLB,4,LAW,1,"Programming,Data Structures",6,6,2,7,Public Defender
+26,Bed Degree in Foundation Phase Teaching,1,ENGINEERING,3,"Legal Research,Negotiation",7,2,2,3,Primary School Teacher
+26,Diploma in Crop Production,3,LAW,2,"Programming,Data Structures",2,6,5,3,Agronomist
+31,Bachelor of Computer Science,2,ENGINEERING,4,"Legal Research,Negotiation",9,5,8,2,Software Engineer
+20,BSc in Agriculture in Animal Science,7,ECONOMICS,3,"Financial Analysis,Excel",5,1,3,8,Agronomist
+24,BCOM Economics,6,HEALTH,3,"Programming,Data Structures",2,7,6,3,Economist
+25,BCOM Law,6,HEALTH,2,"Financial Analysis,Excel",7,3,6,8,Corporate Lawyer
+21,BSc Geology and Geography,3,SCIENCE,4,"Legal Research,Negotiation",6,6,6,7,Geologist
+20,BEngTech Industrial Engineering,8,ECONOMICS,1,"Legal Research,Negotiation",8,1,8,4,Industrial Engineer
+26,BEngTech Industrial Engineering,2,SCIENCE,3,"Programming,Data Structures",2,8,5,8,Industrial Engineer
+25,BEng Industrial Engineering,1,HEALTH,4,"Financial Analysis,Excel",2,8,7,2,Operations Manager
+20,Fitting and Turning,8,ENGINEERING,2,"Financial Analysis,Excel",5,1,8,9,Mechanical Technician
+32,BCOM Economics,9,SCIENCE,1,"Financial Analysis,Excel",5,6,8,5,Economist
+23,BCOM Finance,1,ECONOMICS,3,"Programming,Data Structures",6,6,5,3,Financial Analyst
+31,BEng Industrial Engineering,5,ECONOMICS,4,"Programming,Data Structures",9,6,8,8,Operations Manager
+31,BCOM Law,8,HEALTH,3,"Legal Research,Negotiation",5,8,9,2,Corporate Lawyer
+21,Bachelor of Computer Science,5,ENGINEERING,1,"Legal Research,Negotiation",1,1,3,1,Software Engineer
+29,MBBCH Medicine and Surgery,2,ECONOMICS,2,"Financial Analysis,Excel",5,5,1,2,General Practitioner
+20,MBBCH Medicine and Surgery,7,ENGINEERING,4,"Programming,Data Structures",9,4,4,7,General Practitioner
+30,BEng Industrial Engineering,5,SCIENCE,2,"Programming,Data Structures",3,8,8,5,Operations Manager
+31,Diploma in Information Technology,7,ECONOMICS,1,"Financial Analysis,Excel",9,6,2,6,IT Support Specialist
+25,BEng Civil Engineering,8,HEALTH,2,"Legal Research,Negotiation",2,5,5,5,Civil Engineer
+21,BEng Civil Engineering,7,SCIENCE,4,"Programming,Data Structures",2,1,1,8,Civil Engineer
+29,Bed Degree in Foundation Phase Teaching,2,ECONOMICS,3,"Programming,Data Structures",2,5,6,2,Primary School Teacher
+22,Bachelor of Computer Science,3,SCIENCE,3,"Programming,Data Structures",7,5,9,7,Software Engineer
+27,BCOM Economics,4,ENGINEERING,1,"Programming,Data Structures",8,7,1,1,Economist
+25,Bed Degree in Foundation Phase Teaching,4,LAW,2,"Programming,Data Structures",4,2,8,8,Primary School Teacher
+29,Fitting and Turning,3,LAW,2,"Legal Research,Negotiation",2,3,7,7,Mechanical Technician
+33,LLB,9,LAW,2,"Programming,Data Structures",5,4,8,5,Public Defender
+20,Diploma in Crop Production,2,SCIENCE,4,"Legal Research,Negotiation",1,5,8,2,Agronomist
+23,MBBCH Medicine and Surgery,9,ECONOMICS,3,"Programming,Data Structures",6,8,7,9,General Practitioner
+31,BCOM Economics,9,SCIENCE,1,"Legal Research,Negotiation",5,3,3,4,Economist
+30,Diploma in Information Technology,2,ECONOMICS,1,"Legal Research,Negotiation",7,1,6,2,IT Support Specialist
+21,Bachelor of Nursing,7,HEALTH,4,"Financial Analysis,Excel",1,4,7,6,Registered Nurse
+31,Fitting and Turning,2,ECONOMICS,1,"Financial Analysis,Excel",3,2,8,2,Mechanical Technician
+33,BEng Civil Engineering,5,HEALTH,4,"Legal Research,Negotiation",5,7,5,7,Civil Engineer
+32,BEngTech Industrial Engineering,1,HEALTH,1,"Financial Analysis,Excel",4,5,3,9,Industrial Engineer
+31,BSc Geology and Geography,1,ECONOMICS,3,"Financial Analysis,Excel",6,4,9,7,Geologist
+32,LLB,7,SCIENCE,4,"Programming,Data Structures",4,3,6,4,Public Defender
+34,Bed Degree in Foundation Phase Teaching,7,SCIENCE,4,"Programming,Data Structures",5,7,2,2,Primary School Teacher
+27,BCOM Finance,9,HEALTH,3,"Programming,Data Structures",2,7,3,2,Financial Analyst
+28,Bachelor of Nursing,6,LAW,3,"Legal Research,Negotiation",6,3,6,5,Registered Nurse
+28,BSc Geology and Geography,1,ECONOMICS,2,"Programming,Data Structures",3,8,3,7,Geologist
+24,LLB,7,ENGINEERING,4,"Programming,Data Structures",9,2,4,5,Public Defender
+33,BEng Civil Engineering,5,HEALTH,1,"Financial Analysis,Excel",6,6,6,7,Civil Engineer
+20,BEng Civil Engineering,9,HEALTH,2,"Legal Research,Negotiation",5,9,3,1,Civil Engineer
+23,Fitting and Turning,2,LAW,2,"Financial Analysis,Excel",9,7,7,9,Mechanical Technician
+29,BSc in Agriculture in Animal Science,8,ECONOMICS,1,"Financial Analysis,Excel",1,3,5,9,Agronomist
+20,BEng Industrial Engineering,2,ECONOMICS,3,"Financial Analysis,Excel",1,2,6,5,Operations Manager
+25,Diploma in Information Technology,6,ENGINEERING,2,"Legal Research,Negotiation",8,6,6,6,IT Support Specialist
+24,BCOM Logistics,3,SCIENCE,1,"Programming,Data Structures",8,5,9,4,Logistics Manager
+27,BSc in Agriculture in Animal Science,6,HEALTH,3,"Programming,Data Structures",6,3,9,9,Agronomist
+28,BCOM Finance,5,ECONOMICS,4,"Legal Research,Negotiation",9,7,1,8,Financial Analyst
+34,BSc in Agriculture in Animal Science,8,ENGINEERING,3,"Programming,Data Structures",5,9,6,8,Agronomist
+21,BCOM Accounting,6,LAW,3,"Financial Analysis,Excel",4,4,4,1,Accountant
+24,BCOM Economics,8,HEALTH,4,"Legal Research,Negotiation",3,9,9,6,Economist
+26,Bachelor of Computer Science,3,LAW,1,"Financial Analysis,Excel",6,8,6,5,Software Engineer
+20,Fitting and Turning,7,LAW,2,"Legal Research,Negotiation",4,3,1,1,Mechanical Technician
+28,Boiler Making,4,ENGINEERING,2,"Programming,Data Structures",3,8,3,6,Welding Technician
+22,BCOM Accounting,6,LAW,1,"Legal Research,Negotiation",4,9,8,2,Accountant
+31,Bed Degree in Foundation Phase Teaching,9,ENGINEERING,3,"Legal Research,Negotiation",7,1,5,4,Primary School Teacher
+32,BEng Industrial Engineering,8,HEALTH,3,"Programming,Data Structures",7,8,6,7,Operations Manager
+23,Boiler Making,6,ECONOMICS,1,"Financial Analysis,Excel",7,6,7,1,Welding Technician
+29,LLB,3,SCIENCE,3,"Legal Research,Negotiation",7,8,9,5,Public Defender
+21,Diploma in Crop Production,7,HEALTH,4,"Financial Analysis,Excel",2,9,8,9,Agronomist
+21,MBBCH Medicine and Surgery,7,SCIENCE,3,"Financial Analysis,Excel",2,2,7,3,General Practitioner
+27,BCOM Law,4,SCIENCE,4,"Programming,Data Structures",1,6,9,5,Corporate Lawyer
+22,BCOM Economics,5,ENGINEERING,2,"Programming,Data Structures",7,2,3,2,Economist
+31,BSc Geology and Geography,2,SCIENCE,3,"Legal Research,Negotiation",2,8,6,9,Geologist
+29,BCOM Accounting,7,LAW,2,"Legal Research,Negotiation",5,7,9,7,Accountant
+26,BEng Industrial Engineering,3,SCIENCE,3,"Programming,Data Structures",7,9,2,1,Operations Manager
+23,BEng Civil Engineering,4,SCIENCE,2,"Legal Research,Negotiation",4,9,1,1,Civil Engineer
+24,Diploma in Information Technology,2,SCIENCE,2,"Programming,Data Structures",8,9,1,6,IT Support Specialist
+24,BEng Civil Engineering,2,ENGINEERING,4,"Financial Analysis,Excel",9,8,8,3,Civil Engineer
+26,Diploma in Crop Production,9,ECONOMICS,1,"Financial Analysis,Excel",2,6,7,9,Agronomist
+27,Bachelor of Computer Science,7,SCIENCE,3,"Programming,Data Structures",9,2,7,6,Software Engineer
+30,Diploma in Crop Production,7,SCIENCE,3,"Legal Research,Negotiation",4,2,6,8,Agronomist
+33,BEng Civil Engineering,4,SCIENCE,1,"Programming,Data Structures",1,8,4,8,Civil Engineer
+23,BSc in Agriculture in Animal Science,4,ECONOMICS,1,"Financial Analysis,Excel",4,1,5,2,Agronomist
+22,BEng Industrial Engineering,6,LAW,1,"Programming,Data Structures",3,8,8,5,Operations Manager
+29,Bed Degree in Foundation Phase Teaching,7,SCIENCE,3,"Legal Research,Negotiation",1,3,1,7,Primary School Teacher
+32,Diploma in Information Technology,7,SCIENCE,2,"Financial Analysis,Excel",3,7,9,7,IT Support Specialist
+28,BSc in Agriculture in Animal Science,7,SCIENCE,3,"Legal Research,Negotiation",4,3,9,1,Agronomist
+25,BCOM Economics,7,ENGINEERING,1,"Legal Research,Negotiation",5,8,9,5,Economist
+25,Bachelor of Nursing,2,HEALTH,2,"Legal Research,Negotiation",2,9,7,7,Registered Nurse
+27,Diploma in Information Technology,4,SCIENCE,1,"Financial Analysis,Excel",4,4,1,2,IT Support Specialist
+20,BCOM Accounting,3,HEALTH,2,"Financial Analysis,Excel",7,3,6,8,Accountant
+21,BCOM Accounting,4,ECONOMICS,4,"Financial Analysis,Excel",7,4,9,4,Accountant
+29,BEng Civil Engineering,8,ECONOMICS,3,"Financial Analysis,Excel",1,3,5,9,Civil Engineer
+30,BEngTech Industrial Engineering,1,SCIENCE,2,"Programming,Data Structures",5,5,7,2,Industrial Engineer
+28,BCOM Finance,2,LAW,3,"Programming,Data Structures",8,1,8,7,Financial Analyst
+21,Bed Degree in Foundation Phase Teaching,8,LAW,2,"Programming,Data Structures",5,4,6,4,Primary School Teacher
+26,Diploma in Crop Production,8,ECONOMICS,2,"Programming,Data Structures",5,4,4,2,Agronomist
+30,BSc Geology and Geography,3,HEALTH,2,"Programming,Data Structures",9,9,7,8,Geologist
+22,BEng Civil Engineering,6,SCIENCE,4,"Programming,Data Structures",5,2,2,5,Civil Engineer
+26,Fitting and Turning,5,ECONOMICS,1,"Financial Analysis,Excel",5,7,1,6,Mechanical Technician
+20,Bachelor of Computer Science,8,SCIENCE,3,"Financial Analysis,Excel",8,8,5,7,Software Engineer
+22,BCOM Law,5,ENGINEERING,2,"Programming,Data Structures",1,2,1,2,Corporate Lawyer
+27,Diploma in Crop Production,4,ECONOMICS,3,"Legal Research,Negotiation",9,2,8,1,Agronomist
+32,BCOM Law,5,HEALTH,2,"Legal Research,Negotiation",6,9,2,1,Corporate Lawyer
+21,Bed Degree in Foundation Phase Teaching,3,LAW,2,"Legal Research,Negotiation",6,7,9,4,Primary School Teacher
+26,BCOM Logistics,6,ENGINEERING,2,"Programming,Data Structures",1,6,8,6,Logistics Manager
+28,BCOM Logistics,8,HEALTH,3,"Programming,Data Structures",7,8,4,8,Logistics Manager
+28,BEngTech Industrial Engineering,6,ENGINEERING,2,"Financial Analysis,Excel",9,1,7,9,Industrial Engineer
+29,Fitting and Turning,8,ECONOMICS,3,"Legal Research,Negotiation",2,1,8,8,Mechanical Technician
+22,Boiler Making,8,SCIENCE,3,"Programming,Data Structures",6,9,3,9,Welding Technician
+26,Boiler Making,1,LAW,3,"Programming,Data Structures",3,5,2,9,Welding Technician
+32,BEngTech Industrial Engineering,5,LAW,1,"Legal Research,Negotiation",3,2,9,2,Industrial Engineer
+20,MBBCH Medicine and Surgery,1,HEALTH,3,"Financial Analysis,Excel",6,7,1,9,General Practitioner
+29,Bed Degree in Foundation Phase Teaching,8,HEALTH,3,"Financial Analysis,Excel",6,3,9,1,Primary School Teacher
+32,MBBCH Medicine and Surgery,3,LAW,3,"Financial Analysis,Excel",1,4,7,5,General Practitioner
+29,Bed Degree in Foundation Phase Teaching,9,LAW,3,"Legal Research,Negotiation",1,8,6,3,Primary School Teacher
+22,BEngTech Industrial Engineering,1,LAW,3,"Programming,Data Structures",2,6,9,5,Industrial Engineer
+31,Bed Degree in Foundation Phase Teaching,1,LAW,1,"Programming,Data Structures",4,6,9,7,Primary School Teacher
+34,MBBCH Medicine and Surgery,1,HEALTH,1,"Programming,Data Structures",3,9,6,2,General Practitioner
+29,Diploma in Information Technology,4,HEALTH,2,"Programming,Data Structures",3,7,6,9,IT Support Specialist
+20,Diploma in Information Technology,5,ECONOMICS,3,"Legal Research,Negotiation",2,1,4,5,IT Support Specialist
+25,BEng Civil Engineering,8,ENGINEERING,3,"Programming,Data Structures",8,5,7,3,Civil Engineer
+31,Bed Degree in Foundation Phase Teaching,3,SCIENCE,4,"Legal Research,Negotiation",3,1,5,9,Primary School Teacher
+32,BCOM Accounting,8,ENGINEERING,2,"Programming,Data Structures",8,8,9,3,Accountant
+20,Bed Degree in Foundation Phase Teaching,3,HEALTH,1,"Legal Research,Negotiation",3,1,3,6,Primary School Teacher
+28,BSc Geology and Geography,3,ENGINEERING,1,"Programming,Data Structures",3,9,4,9,Geologist
+22,BEngTech Industrial Engineering,5,HEALTH,2,"Legal Research,Negotiation",7,5,7,9,Industrial Engineer
+21,BCOM Economics,9,ENGINEERING,1,"Financial Analysis,Excel",1,8,7,3,Economist
+30,LLB,2,SCIENCE,4,"Legal Research,Negotiation",4,9,3,5,Public Defender
+22,Boiler Making,5,ENGINEERING,3,"Legal Research,Negotiation",4,6,4,2,Welding Technician
+23,BSc in Agriculture in Animal Science,4,HEALTH,3,"Financial Analysis,Excel",4,3,5,8,Agronomist
+32,LLB,1,ECONOMICS,1,"Financial Analysis,Excel",2,3,5,2,Public Defender
+24,BCOM Logistics,4,HEALTH,2,"Legal Research,Negotiation",9,2,9,3,Logistics Manager
+34,LLB,9,HEALTH,2,"Programming,Data Structures",3,6,7,9,Public Defender
+32,BEng Civil Engineering,4,HEALTH,4,"Legal Research,Negotiation",2,5,8,1,Civil Engineer
+32,Diploma in Crop Production,2,ENGINEERING,1,"Programming,Data Structures",7,4,7,1,Agronomist
+20,BCOM Logistics,6,ECONOMICS,2,"Legal Research,Negotiation",3,2,7,7,Logistics Manager
+25,BCOM Finance,6,HEALTH,1,"Programming,Data Structures",8,1,5,6,Financial Analyst
+33,Diploma in Information Technology,8,ECONOMICS,3,"Legal Research,Negotiation",8,5,7,7,IT Support Specialist
+21,Bed Degree in Foundation Phase Teaching,1,LAW,3,"Financial Analysis,Excel",4,8,4,5,Primary School Teacher
+23,BCOM Economics,4,HEALTH,2,"Legal Research,Negotiation",7,1,3,7,Economist
+31,Bachelor of Nursing,2,LAW,4,"Financial Analysis,Excel",1,4,6,9,Registered Nurse
+33,Fitting and Turning,3,LAW,4,"Legal Research,Negotiation",5,8,9,6,Mechanical Technician
+24,BCOM Economics,4,LAW,3,"Legal Research,Negotiation",4,2,9,3,Economist
+29,BSc in Agriculture in Animal Science,7,ENGINEERING,2,"Programming,Data Structures",6,7,9,4,Agronomist
+24,MBBCH Medicine and Surgery,4,HEALTH,2,"Programming,Data Structures",4,8,2,8,General Practitioner
+23,Bed Degree in Foundation Phase Teaching,3,LAW,1,"Legal Research,Negotiation",6,2,2,7,Primary School Teacher
+33,MBBCH Medicine and Surgery,1,ECONOMICS,2,"Financial Analysis,Excel",6,1,3,7,General Practitioner
+34,Fitting and Turning,9,HEALTH,3,"Programming,Data Structures",8,7,3,3,Mechanical Technician
+26,MBBCH Medicine and Surgery,8,LAW,3,"Legal Research,Negotiation",4,6,8,5,General Practitioner
+32,MBBCH Medicine and Surgery,8,HEALTH,3,"Financial Analysis,Excel",9,3,8,2,General Practitioner
+28,BCOM Accounting,4,ECONOMICS,1,"Financial Analysis,Excel",3,7,4,1,Accountant
+24,BCOM Economics,7,ECONOMICS,1,"Programming,Data Structures",6,9,3,1,Economist
+33,LLB,9,ECONOMICS,3,"Financial Analysis,Excel",4,7,4,7,Public Defender
+34,BEng Industrial Engineering,4,ENGINEERING,3,"Legal Research,Negotiation",5,6,9,9,Operations Manager
+29,LLB,8,LAW,3,"Programming,Data Structures",4,8,2,6,Public Defender
+23,Boiler Making,3,ENGINEERING,3,"Financial Analysis,Excel",5,4,8,2,Welding Technician
+25,BEngTech Industrial Engineering,5,LAW,2,"Financial Analysis,Excel",2,5,7,4,Industrial Engineer
+30,LLB,2,HEALTH,1,"Legal Research,Negotiation",4,7,5,3,Public Defender
+21,Bachelor of Computer Science,9,ENGINEERING,2,"Programming,Data Structures",4,5,3,3,Software Engineer
+30,BCOM Accounting,3,ENGINEERING,4,"Financial Analysis,Excel",3,3,3,2,Accountant
+20,Boiler Making,5,ENGINEERING,4,"Legal Research,Negotiation",7,8,8,6,Welding Technician
+20,Boiler Making,7,LAW,2,"Legal Research,Negotiation",5,1,7,2,Welding Technician
+30,BCOM Accounting,8,ECONOMICS,1,"Legal Research,Negotiation",1,2,1,1,Accountant
+21,BSc Geology and Geography,7,ECONOMICS,4,"Financial Analysis,Excel",4,9,3,2,Geologist
+27,Bachelor of Nursing,7,ENGINEERING,4,"Legal Research,Negotiation",6,3,9,1,Registered Nurse
+22,BCOM Logistics,2,SCIENCE,2,"Legal Research,Negotiation",7,2,9,3,Logistics Manager
+23,Fitting and Turning,9,HEALTH,4,"Programming,Data Structures",7,8,2,6,Mechanical Technician
+25,Fitting and Turning,5,LAW,3,"Legal Research,Negotiation",5,8,2,2,Mechanical Technician
+29,Fitting and Turning,7,SCIENCE,4,"Legal Research,Negotiation",7,8,2,8,Mechanical Technician
+32,BEng Civil Engineering,3,SCIENCE,2,"Legal Research,Negotiation",6,9,4,3,Civil Engineer
+21,Fitting and Turning,2,LAW,1,"Legal Research,Negotiation",3,1,5,3,Mechanical Technician
+32,BCOM Finance,6,ENGINEERING,3,"Financial Analysis,Excel",8,4,9,6,Financial Analyst
+28,Fitting and Turning,3,LAW,2,"Financial Analysis,Excel",6,5,2,7,Mechanical Technician
+34,Diploma in Crop Production,1,ECONOMICS,2,"Financial Analysis,Excel",9,2,2,3,Agronomist
+25,LLB,2,SCIENCE,3,"Financial Analysis,Excel",6,2,6,4,Public Defender
+23,Fitting and Turning,1,HEALTH,4,"Legal Research,Negotiation",6,8,7,3,Mechanical Technician
+27,BSc Geology and Geography,2,ENGINEERING,3,"Programming,Data Structures",4,1,7,6,Geologist
+29,BCOM Economics,8,LAW,2,"Programming,Data Structures",5,7,2,7,Economist
+31,Diploma in Crop Production,2,SCIENCE,1,"Financial Analysis,Excel",2,7,5,6,Agronomist
+26,BEng Industrial Engineering,9,HEALTH,1,"Legal Research,Negotiation",4,9,5,8,Operations Manager
+34,BCOM Accounting,9,ENGINEERING,2,"Legal Research,Negotiation",3,4,9,4,Accountant
+20,BCOM Accounting,1,LAW,3,"Programming,Data Structures",2,2,5,4,Accountant
+32,Bachelor of Computer Science,1,SCIENCE,1,"Financial Analysis,Excel",1,1,9,8,Software Engineer
+31,BEng Industrial Engineering,8,SCIENCE,3,"Legal Research,Negotiation",2,5,7,7,Operations Manager
+21,Diploma in Crop Production,1,ECONOMICS,1,"Legal Research,Negotiation",7,8,8,1,Agronomist
+33,BSc in Agriculture in Animal Science,8,LAW,1,"Programming,Data Structures",4,7,1,1,Agronomist
+22,BCOM Law,3,LAW,1,"Financial Analysis,Excel",7,4,9,3,Corporate Lawyer
+29,Diploma in Crop Production,5,ENGINEERING,3,"Programming,Data Structures",9,2,3,9,Agronomist
+26,Boiler Making,2,ENGINEERING,3,"Programming,Data Structures",4,5,4,9,Welding Technician
+33,LLB,5,SCIENCE,1,"Programming,Data Structures",7,3,6,7,Public Defender
+23,Bed Degree in Foundation Phase Teaching,6,SCIENCE,2,"Financial Analysis,Excel",3,8,2,5,Primary School Teacher
+23,BSc in Agriculture in Animal Science,4,ECONOMICS,4,"Financial Analysis,Excel",5,7,2,9,Agronomist
+26,BCOM Accounting,5,LAW,2,"Legal Research,Negotiation",4,1,3,5,Accountant
+23,LLB,3,ECONOMICS,3,"Legal Research,Negotiation",1,9,7,2,Public Defender
+28,LLB,7,LAW,1,"Legal Research,Negotiation",9,7,2,8,Public Defender
+27,BSc in Agriculture in Animal Science,3,ENGINEERING,1,"Programming,Data Structures",9,3,3,2,Agronomist
+22,Bed Degree in Foundation Phase Teaching,6,ECONOMICS,2,"Legal Research,Negotiation",1,4,5,1,Primary School Teacher
+30,BSc Geology and Geography,8,LAW,3,"Financial Analysis,Excel",3,6,4,6,Geologist
+34,Fitting and Turning,1,ENGINEERING,2,"Financial Analysis,Excel",4,4,7,7,Mechanical Technician
+26,Boiler Making,1,ECONOMICS,4,"Programming,Data Structures",8,1,3,5,Welding Technician
+30,Boiler Making,8,ECONOMICS,1,"Legal Research,Negotiation",9,9,6,9,Welding Technician
+24,BSc Geology and Geography,9,SCIENCE,2,"Legal Research,Negotiation",1,5,9,9,Geologist
+25,BSc Geology and Geography,3,SCIENCE,3,"Legal Research,Negotiation",3,3,8,5,Geologist
+26,BCOM Finance,2,LAW,2,"Legal Research,Negotiation",5,3,2,2,Financial Analyst
+26,LLB,3,ENGINEERING,2,"Financial Analysis,Excel",3,6,6,5,Public Defender
+33,BEng Civil Engineering,1,LAW,2,"Financial Analysis,Excel",3,2,6,9,Civil Engineer
+34,Fitting and Turning,3,HEALTH,2,"Programming,Data Structures",7,1,3,2,Mechanical Technician
+29,BCOM Logistics,3,ENGINEERING,3,"Financial Analysis,Excel",4,4,7,8,Logistics Manager
+28,BSc in Agriculture in Animal Science,9,HEALTH,3,"Financial Analysis,Excel",9,2,8,8,Agronomist
+30,BSc in Agriculture in Animal Science,2,ECONOMICS,2,"Programming,Data Structures",5,3,5,6,Agronomist
+28,BCOM Logistics,1,HEALTH,1,"Financial Analysis,Excel",5,6,8,2,Logistics Manager
+20,Diploma in Crop Production,1,LAW,1,"Programming,Data Structures",8,8,5,7,Agronomist
+21,Fitting and Turning,7,LAW,4,"Financial Analysis,Excel",6,4,6,7,Mechanical Technician
+24,MBBCH Medicine and Surgery,1,ENGINEERING,4,"Programming,Data Structures",8,2,1,1,General Practitioner
+27,Fitting and Turning,3,ECONOMICS,2,"Legal Research,Negotiation",3,3,8,8,Mechanical Technician
+31,BEngTech Industrial Engineering,7,ENGINEERING,3,"Legal Research,Negotiation",5,7,6,4,Industrial Engineer
+26,BCOM Law,1,ENGINEERING,3,"Programming,Data Structures",1,1,8,1,Corporate Lawyer
+34,BCOM Accounting,7,ECONOMICS,1,"Programming,Data Structures",1,9,2,6,Accountant
+33,Fitting and Turning,9,ECONOMICS,3,"Legal Research,Negotiation",7,2,6,7,Mechanical Technician
+26,Bachelor of Computer Science,6,LAW,1,"Financial Analysis,Excel",7,8,2,7,Software Engineer
+32,Fitting and Turning,2,SCIENCE,1,"Legal Research,Negotiation",5,7,1,1,Mechanical Technician
+29,Bachelor of Computer Science,8,ENGINEERING,3,"Legal Research,Negotiation",4,4,7,4,Software Engineer
+22,LLB,7,SCIENCE,2,"Financial Analysis,Excel",1,9,9,1,Public Defender
+28,BCOM Law,1,HEALTH,2,"Financial Analysis,Excel",2,8,3,4,Corporate Lawyer
+33,BSc Geology and Geography,9,HEALTH,4,"Financial Analysis,Excel",3,8,6,4,Geologist
+30,Diploma in Crop Production,9,LAW,1,"Financial Analysis,Excel",1,7,1,2,Agronomist
+23,Bachelor of Computer Science,3,HEALTH,4,"Financial Analysis,Excel",6,4,7,2,Software Engineer
+28,Bachelor of Nursing,9,ENGINEERING,3,"Legal Research,Negotiation",8,4,9,9,Registered Nurse
+25,Bachelor of Nursing,5,SCIENCE,3,"Legal Research,Negotiation",7,9,5,3,Registered Nurse
+21,BCOM Logistics,6,ENGINEERING,1,"Programming,Data Structures",4,7,7,8,Logistics Manager
+24,BCOM Law,1,LAW,4,"Programming,Data Structures",2,3,9,2,Corporate Lawyer
+23,BSc Geology and Geography,9,LAW,2,"Programming,Data Structures",3,2,5,5,Geologist
+34,BEng Civil Engineering,5,ENGINEERING,2,"Legal Research,Negotiation",6,4,9,9,Civil Engineer
+34,BCOM Logistics,1,ENGINEERING,1,"Legal Research,Negotiation",4,1,9,6,Logistics Manager
+30,Bed Degree in Foundation Phase Teaching,7,ENGINEERING,2,"Legal Research,Negotiation",6,3,8,6,Primary School Teacher
+32,BEng Civil Engineering,8,SCIENCE,1,"Legal Research,Negotiation",6,3,9,7,Civil Engineer
+32,BEng Industrial Engineering,3,HEALTH,2,"Financial Analysis,Excel",6,3,3,4,Operations Manager
+25,Bachelor of Nursing,5,ENGINEERING,3,"Programming,Data Structures",9,2,3,2,Registered Nurse
+21,Bachelor of Nursing,3,LAW,2,"Programming,Data Structures",4,2,8,3,Registered Nurse
+25,BCOM Finance,3,SCIENCE,4,"Legal Research,Negotiation",7,2,5,2,Financial Analyst
+25,Fitting and Turning,5,ENGINEERING,1,"Financial Analysis,Excel",5,3,3,4,Mechanical Technician
+29,BEng Civil Engineering,7,LAW,2,"Legal Research,Negotiation",3,6,1,4,Civil Engineer
+20,Bachelor of Nursing,7,SCIENCE,1,"Programming,Data Structures",6,1,6,8,Registered Nurse
+20,BCOM Accounting,6,HEALTH,3,"Programming,Data Structures",9,7,1,5,Accountant
+28,Fitting and Turning,8,LAW,1,"Financial Analysis,Excel",4,4,6,8,Mechanical Technician
+28,BCOM Accounting,8,HEALTH,4,"Programming,Data Structures",3,5,9,3,Accountant
+33,Bed Degree in Foundation Phase Teaching,9,HEALTH,2,"Financial Analysis,Excel",7,6,1,9,Primary School Teacher
+29,BCOM Law,2,HEALTH,4,"Legal Research,Negotiation",4,8,6,2,Corporate Lawyer
+25,BEng Industrial Engineering,5,LAW,4,"Programming,Data Structures",3,8,7,6,Operations Manager
+31,BEngTech Industrial Engineering,3,LAW,1,"Programming,Data Structures",6,2,4,1,Industrial Engineer
+26,Diploma in Information Technology,4,ENGINEERING,4,"Legal Research,Negotiation",5,7,9,8,IT Support Specialist
+32,BCOM Economics,2,LAW,3,"Programming,Data Structures",5,8,3,3,Economist
+22,BEng Civil Engineering,1,LAW,1,"Legal Research,Negotiation",4,5,6,6,Civil Engineer
+24,LLB,2,ENGINEERING,3,"Programming,Data Structures",3,2,3,3,Public Defender
+27,BSc Geology and Geography,1,LAW,3,"Financial Analysis,Excel",2,8,3,1,Geologist
+26,BEng Civil Engineering,4,SCIENCE,2,"Legal Research,Negotiation",1,7,7,2,Civil Engineer
+27,Bachelor of Nursing,5,ECONOMICS,1,"Programming,Data Structures",4,2,7,7,Registered Nurse
+34,BEngTech Industrial Engineering,9,SCIENCE,4,"Legal Research,Negotiation",1,9,3,7,Industrial Engineer
+24,BCOM Accounting,3,ECONOMICS,4,"Legal Research,Negotiation",3,8,8,7,Accountant
+30,Bachelor of Computer Science,6,LAW,3,"Programming,Data Structures",2,7,7,7,Software Engineer
+21,Bachelor of Nursing,6,ECONOMICS,3,"Financial Analysis,Excel",5,3,2,8,Registered Nurse
+32,Diploma in Information Technology,9,LAW,1,"Financial Analysis,Excel",9,1,1,6,IT Support Specialist
+32,BEng Industrial Engineering,4,HEALTH,3,"Financial Analysis,Excel",3,7,8,3,Operations Manager
+24,BEng Civil Engineering,3,LAW,3,"Financial Analysis,Excel",7,9,5,5,Civil Engineer
+30,MBBCH Medicine and Surgery,6,ENGINEERING,3,"Financial Analysis,Excel",8,1,9,2,General Practitioner
+28,BCOM Finance,3,SCIENCE,2,"Programming,Data Structures",8,5,1,4,Financial Analyst
+23,BEng Industrial Engineering,7,HEALTH,4,"Legal Research,Negotiation",4,5,4,1,Operations Manager
+21,BEng Industrial Engineering,6,ECONOMICS,3,"Legal Research,Negotiation",3,9,7,2,Operations Manager
+24,MBBCH Medicine and Surgery,3,HEALTH,1,"Financial Analysis,Excel",2,8,8,5,General Practitioner
+29,BSc Geology and Geography,2,ECONOMICS,4,"Financial Analysis,Excel",9,5,4,8,Geologist
+20,Fitting and Turning,6,ECONOMICS,4,"Legal Research,Negotiation",4,1,7,4,Mechanical Technician
+22,Boiler Making,1,SCIENCE,2,"Legal Research,Negotiation",5,6,6,5,Welding Technician
+25,BCOM Finance,2,ECONOMICS,2,"Programming,Data Structures",6,7,8,8,Financial Analyst
+25,Diploma in Information Technology,8,SCIENCE,2,"Programming,Data Structures",5,6,1,1,IT Support Specialist
+34,BCOM Finance,9,SCIENCE,2,"Financial Analysis,Excel",4,3,1,6,Financial Analyst
+30,Bachelor of Computer Science,4,ECONOMICS,4,"Financial Analysis,Excel",9,2,4,7,Software Engineer
+23,BCOM Accounting,1,HEALTH,3,"Programming,Data Structures",4,4,2,7,Accountant
+22,Diploma in Crop Production,6,HEALTH,3,"Financial Analysis,Excel",3,3,5,3,Agronomist
+24,Bed Degree in Foundation Phase Teaching,5,LAW,3,"Legal Research,Negotiation",5,6,7,1,Primary School Teacher
+31,Fitting and Turning,9,SCIENCE,1,"Programming,Data Structures",7,2,6,2,Mechanical Technician
+23,Bachelor of Nursing,9,SCIENCE,1,"Legal Research,Negotiation",3,8,4,4,Registered Nurse
+27,Diploma in Crop Production,5,ECONOMICS,4,"Programming,Data Structures",8,2,9,3,Agronomist
+26,MBBCH Medicine and Surgery,6,HEALTH,2,"Legal Research,Negotiation",1,6,9,4,General Practitioner
+26,Fitting and Turning,6,ENGINEERING,3,"Financial Analysis,Excel",3,6,2,5,Mechanical Technician
+25,BCOM Accounting,6,ECONOMICS,1,"Financial Analysis,Excel",1,2,9,7,Accountant
+24,BSc Geology and Geography,1,ECONOMICS,1,"Financial Analysis,Excel",4,7,5,8,Geologist
+32,MBBCH Medicine and Surgery,1,SCIENCE,2,"Financial Analysis,Excel",9,6,9,6,General Practitioner
+25,BCOM Economics,2,HEALTH,4,"Legal Research,Negotiation",8,1,9,9,Economist
+34,Diploma in Information Technology,6,HEALTH,3,"Legal Research,Negotiation",2,2,9,1,IT Support Specialist
+31,BCOM Logistics,5,ECONOMICS,2,"Programming,Data Structures",7,7,5,1,Logistics Manager
+28,Diploma in Crop Production,8,LAW,2,"Legal Research,Negotiation",2,6,2,4,Agronomist
+26,Boiler Making,1,ENGINEERING,2,"Legal Research,Negotiation",3,7,3,5,Welding Technician
+29,BCOM Economics,8,ECONOMICS,4,"Programming,Data Structures",8,7,7,2,Economist
+28,MBBCH Medicine and Surgery,3,LAW,3,"Financial Analysis,Excel",9,7,5,4,General Practitioner
+34,Bed Degree in Foundation Phase Teaching,7,HEALTH,1,"Financial Analysis,Excel",4,6,7,4,Primary School Teacher
+23,Bachelor of Nursing,9,ECONOMICS,1,"Financial Analysis,Excel",1,2,5,1,Registered Nurse
+21,BEng Civil Engineering,8,HEALTH,1,"Programming,Data Structures",2,4,1,1,Civil Engineer
+24,MBBCH Medicine and Surgery,6,HEALTH,2,"Legal Research,Negotiation",9,4,8,2,General Practitioner
+22,BEng Industrial Engineering,3,ENGINEERING,2,"Programming,Data Structures",2,5,5,1,Operations Manager
+29,Diploma in Crop Production,3,LAW,4,"Programming,Data Structures",4,1,5,8,Agronomist
+23,BSc in Agriculture in Animal Science,9,LAW,4,"Programming,Data Structures",9,5,6,2,Agronomist
+33,LLB,1,SCIENCE,2,"Financial Analysis,Excel",7,8,4,6,Public Defender
+22,Diploma in Information Technology,5,ENGINEERING,2,"Programming,Data Structures",7,9,1,9,IT Support Specialist
+25,BSc Geology and Geography,1,ENGINEERING,4,"Legal Research,Negotiation",8,3,3,4,Geologist
+28,MBBCH Medicine and Surgery,7,SCIENCE,4,"Legal Research,Negotiation",7,5,6,8,General Practitioner
+30,BCOM Law,1,SCIENCE,4,"Legal Research,Negotiation",3,8,7,2,Corporate Lawyer
+33,Diploma in Information Technology,4,ECONOMICS,2,"Legal Research,Negotiation",3,8,7,4,IT Support Specialist
+24,BCOM Logistics,3,HEALTH,4,"Financial Analysis,Excel",9,6,4,8,Logistics Manager
+23,BEng Civil Engineering,8,ECONOMICS,2,"Financial Analysis,Excel",6,9,7,3,Civil Engineer
+34,BCOM Economics,3,SCIENCE,3,"Financial Analysis,Excel",7,4,9,5,Economist
+27,Diploma in Information Technology,4,ENGINEERING,4,"Financial Analysis,Excel",3,8,5,1,IT Support Specialist
+34,BCOM Finance,9,ECONOMICS,2,"Programming,Data Structures",9,2,1,2,Financial Analyst
+23,BEngTech Industrial Engineering,8,SCIENCE,3,"Legal Research,Negotiation",4,4,1,9,Industrial Engineer
+30,BCOM Accounting,1,ENGINEERING,1,"Programming,Data Structures",5,9,2,4,Accountant
