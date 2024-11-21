@@ -13,18 +13,18 @@ function ProtectedRoute() {
         );
     }
     
+    // Not logged in
     if (!user) {
         return <Navigate to="/login" state={{ from: location }} replace />;
     }
     
-    // Check if assessment is completed
+    // No profile (assessment not completed) and not on assessment page
     if (!user.profile && location.pathname !== '/assessment') {
         return <Navigate to="/assessment" replace />;
     }
     
-    // Check if skills are selected
-    if ((!user.skills || user.skills.length === 0) && 
-        location.pathname !== '/assessment' && 
+    // Assessment completed but no skills and not on skills page
+    if (user.profile && (!user.skills || user.skills.length === 0) && 
         location.pathname !== '/skills') {
         return <Navigate to="/skills" replace />;
     }

@@ -7,20 +7,28 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  const refreshUser = async () => {
+    try {
+      const response = await api.get('/user/profile');
+      const userData = response.data.user;
+      setUser(userData);
+      localStorage.setItem('user', JSON.stringify(userData));
+      return userData;
+    } catch (error) {
+      console.error('Error refreshing user data:', error);
+      throw error;
+    }
+  };
+
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      // Fetch current user profile
-      api.get('/user/profile')
-        .then(response => {
-          setUser(response.data.user);
-          localStorage.setItem('user', JSON.stringify(response.data.user));
-        })
+      refreshUser()
         .catch(() => {
-          // If token is invalid, clear storage
           localStorage.removeItem('token');
           localStorage.removeItem('user');
           localStorage.removeItem('userId');
+          setUser(null);
         })
         .finally(() => {
           setLoading(false);
@@ -35,19 +43,10 @@ export const AuthProvider = ({ children }) => {
     localStorage.setItem('userId', userData.id || userData.user_id);
     
     try {
-      // Fetch complete user profile after login
-      const profileResponse = await api.get('/user/profile');
-      const fullUserData = profileResponse.data.user;
-      
-      localStorage.setItem('user', JSON.stringify(fullUserData));
-      setUser(fullUserData);
-      
-      return fullUserData;
+      await refreshUser();
     } catch (error) {
-      console.error('Error fetching user profile:', error);
       setUser(userData);
       localStorage.setItem('user', JSON.stringify(userData));
-      return userData;
     }
   };
 
@@ -59,7 +58,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ user, loading, login, logout }}>
+    <AuthContext.Provider value={{ user, loading, login, logout, refreshUser }}>
       {children}
     </AuthContext.Provider>
   );
