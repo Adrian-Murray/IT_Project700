@@ -3458,3 +3458,144 @@ WHERE reference_profiles.id = ?
 2024-11-21 06:19:44,619 - sqlalchemy.engine.Engine - INFO - [generated in 0.00026s] (1,)
 2024-11-21 06:19:44,619 - sqlalchemy.engine.Engine - INFO - ROLLBACK
 2024-11-21 06:19:44,619 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 06:19:44] "POST /submit_assessment HTTP/1.1" 200 -
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("universities")
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("careers")
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("courses")
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("mentorships")
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("cv_templates")
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("reference_profiles")
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("behavioral_assessments")
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2024-11-21 19:37:39,789 - sqlalchemy.engine.Engine - INFO - COMMIT
+2024-11-21 19:37:39,789 - app - INFO - Database tables created successfully
+2024-11-21 19:37:39,820 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-21 19:37:39,820 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-11-21 19:37:55,216 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:37:55] "OPTIONS /user/profile HTTP/1.1" 200 -
+2024-11-21 19:37:55,216 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:37:55] "OPTIONS /user/profile HTTP/1.1" 200 -
+2024-11-21 19:37:55,474 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-21 19:37:55,474 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.age AS users_age, users.skills AS users_skills, users.career_interests AS users_career_interests, users.password AS users_password, users.reference_profile_id AS users_reference_profile_id, users.course AS users_course, users.university_id AS users_university_id, users.faculty AS users_faculty, users.duration AS users_duration 
+FROM users 
+WHERE users.id = ?
+2024-11-21 19:37:55,474 - sqlalchemy.engine.Engine - INFO - [generated in 0.00060s] (6,)
+2024-11-21 19:37:55,474 - sqlalchemy.engine.Engine - INFO - SELECT reference_profiles.id AS reference_profiles_id, reference_profiles.name AS reference_profiles_name, reference_profiles.description AS reference_profiles_description, reference_profiles.dominance AS reference_profiles_dominance, reference_profiles.extraversion AS reference_profiles_extraversion, reference_profiles.patience AS reference_profiles_patience, reference_profiles.formality AS reference_profiles_formality 
+FROM reference_profiles 
+WHERE reference_profiles.id = ?
+2024-11-21 19:37:55,474 - sqlalchemy.engine.Engine - INFO - [generated in 0.00048s] (1,)
+2024-11-21 19:37:55,474 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-21 19:37:55,474 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:37:55] "GET /user/profile HTTP/1.1" 200 -
+2024-11-21 19:37:55,536 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-21 19:37:55,536 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.age AS users_age, users.skills AS users_skills, users.career_interests AS users_career_interests, users.password AS users_password, users.reference_profile_id AS users_reference_profile_id, users.course AS users_course, users.university_id AS users_university_id, users.faculty AS users_faculty, users.duration AS users_duration 
+FROM users 
+WHERE users.id = ?
+2024-11-21 19:37:55,536 - sqlalchemy.engine.Engine - INFO - [cached since 0.05494s ago] (6,)
+2024-11-21 19:37:55,536 - sqlalchemy.engine.Engine - INFO - SELECT reference_profiles.id AS reference_profiles_id, reference_profiles.name AS reference_profiles_name, reference_profiles.description AS reference_profiles_description, reference_profiles.dominance AS reference_profiles_dominance, reference_profiles.extraversion AS reference_profiles_extraversion, reference_profiles.patience AS reference_profiles_patience, reference_profiles.formality AS reference_profiles_formality 
+FROM reference_profiles 
+WHERE reference_profiles.id = ?
+2024-11-21 19:37:55,536 - sqlalchemy.engine.Engine - INFO - [cached since 0.05255s ago] (1,)
+2024-11-21 19:37:55,536 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-21 19:37:55,536 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:37:55] "GET /user/profile HTTP/1.1" 200 -
+2024-11-21 19:37:55,812 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:37:55] "OPTIONS /skills HTTP/1.1" 200 -
+2024-11-21 19:37:55,812 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:37:55] "OPTIONS /skills HTTP/1.1" 200 -
+2024-11-21 19:37:55,812 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-21 19:37:55,812 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.age AS users_age, users.skills AS users_skills, users.career_interests AS users_career_interests, users.password AS users_password, users.reference_profile_id AS users_reference_profile_id, users.course AS users_course, users.university_id AS users_university_id, users.faculty AS users_faculty, users.duration AS users_duration 
+FROM users 
+WHERE users.id = ?
+2024-11-21 19:37:55,812 - sqlalchemy.engine.Engine - INFO - [cached since 0.3329s ago] (6,)
+2024-11-21 19:37:55,812 - sqlalchemy.engine.Engine - INFO - SELECT reference_profiles.id AS reference_profiles_id, reference_profiles.name AS reference_profiles_name, reference_profiles.description AS reference_profiles_description, reference_profiles.dominance AS reference_profiles_dominance, reference_profiles.extraversion AS reference_profiles_extraversion, reference_profiles.patience AS reference_profiles_patience, reference_profiles.formality AS reference_profiles_formality 
+FROM reference_profiles 
+WHERE reference_profiles.id = ?
+2024-11-21 19:37:55,812 - sqlalchemy.engine.Engine - INFO - [cached since 0.3304s ago] (1,)
+2024-11-21 19:37:55,812 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-21 19:37:55,812 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:37:55] "GET /user/profile HTTP/1.1" 200 -
+2024-11-21 19:37:55,844 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-21 19:37:55,844 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.age AS users_age, users.skills AS users_skills, users.career_interests AS users_career_interests, users.password AS users_password, users.reference_profile_id AS users_reference_profile_id, users.course AS users_course, users.university_id AS users_university_id, users.faculty AS users_faculty, users.duration AS users_duration 
+FROM users 
+WHERE users.id = ?
+2024-11-21 19:37:55,844 - sqlalchemy.engine.Engine - INFO - [cached since 0.3615s ago] (6,)
+2024-11-21 19:37:55,844 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-21 19:37:55,844 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:37:55] "GET /skills HTTP/1.1" 200 -
+2024-11-21 19:37:56,123 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-21 19:37:56,123 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.age AS users_age, users.skills AS users_skills, users.career_interests AS users_career_interests, users.password AS users_password, users.reference_profile_id AS users_reference_profile_id, users.course AS users_course, users.university_id AS users_university_id, users.faculty AS users_faculty, users.duration AS users_duration 
+FROM users 
+WHERE users.id = ?
+2024-11-21 19:37:56,123 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-21 19:37:56,123 - sqlalchemy.engine.Engine - INFO - [cached since 0.6431s ago] (6,)
+2024-11-21 19:37:56,123 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.age AS users_age, users.skills AS users_skills, users.career_interests AS users_career_interests, users.password AS users_password, users.reference_profile_id AS users_reference_profile_id, users.course AS users_course, users.university_id AS users_university_id, users.faculty AS users_faculty, users.duration AS users_duration 
+FROM users 
+WHERE users.id = ?
+2024-11-21 19:37:56,123 - sqlalchemy.engine.Engine - INFO - [cached since 0.6438s ago] (6,)
+2024-11-21 19:37:56,123 - sqlalchemy.engine.Engine - INFO - SELECT reference_profiles.id AS reference_profiles_id, reference_profiles.name AS reference_profiles_name, reference_profiles.description AS reference_profiles_description, reference_profiles.dominance AS reference_profiles_dominance, reference_profiles.extraversion AS reference_profiles_extraversion, reference_profiles.patience AS reference_profiles_patience, reference_profiles.formality AS reference_profiles_formality 
+FROM reference_profiles 
+WHERE reference_profiles.id = ?
+2024-11-21 19:37:56,123 - sqlalchemy.engine.Engine - INFO - [cached since 0.6408s ago] (1,)
+2024-11-21 19:37:56,123 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-21 19:37:56,123 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-21 19:37:56,123 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:37:56] "GET /user/profile HTTP/1.1" 200 -
+2024-11-21 19:37:56,123 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:37:56] "GET /skills HTTP/1.1" 200 -
+2024-11-21 19:37:59,694 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-21 19:37:59,694 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-21 19:37:59,694 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.age AS users_age, users.skills AS users_skills, users.career_interests AS users_career_interests, users.password AS users_password, users.reference_profile_id AS users_reference_profile_id, users.course AS users_course, users.university_id AS users_university_id, users.faculty AS users_faculty, users.duration AS users_duration 
+FROM users 
+WHERE users.id = ?
+2024-11-21 19:37:59,694 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.age AS users_age, users.skills AS users_skills, users.career_interests AS users_career_interests, users.password AS users_password, users.reference_profile_id AS users_reference_profile_id, users.course AS users_course, users.university_id AS users_university_id, users.faculty AS users_faculty, users.duration AS users_duration 
+FROM users 
+WHERE users.id = ?
+2024-11-21 19:37:59,694 - sqlalchemy.engine.Engine - INFO - [cached since 4.214s ago] (6,)
+2024-11-21 19:37:59,694 - sqlalchemy.engine.Engine - INFO - [cached since 4.214s ago] (6,)
+2024-11-21 19:37:59,694 - sqlalchemy.engine.Engine - INFO - SELECT reference_profiles.id AS reference_profiles_id, reference_profiles.name AS reference_profiles_name, reference_profiles.description AS reference_profiles_description, reference_profiles.dominance AS reference_profiles_dominance, reference_profiles.extraversion AS reference_profiles_extraversion, reference_profiles.patience AS reference_profiles_patience, reference_profiles.formality AS reference_profiles_formality 
+FROM reference_profiles 
+WHERE reference_profiles.id = ?
+2024-11-21 19:37:59,694 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-21 19:37:59,694 - sqlalchemy.engine.Engine - INFO - [cached since 4.212s ago] (1,)
+2024-11-21 19:37:59,694 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:37:59] "GET /skills HTTP/1.1" 200 -
+2024-11-21 19:37:59,694 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-21 19:37:59,694 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:37:59] "GET /user/profile HTTP/1.1" 200 -
+2024-11-21 19:37:59,947 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-21 19:37:59,947 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.age AS users_age, users.skills AS users_skills, users.career_interests AS users_career_interests, users.password AS users_password, users.reference_profile_id AS users_reference_profile_id, users.course AS users_course, users.university_id AS users_university_id, users.faculty AS users_faculty, users.duration AS users_duration 
+FROM users 
+WHERE users.id = ?
+2024-11-21 19:37:59,947 - sqlalchemy.engine.Engine - INFO - [cached since 4.466s ago] (6,)
+2024-11-21 19:37:59,947 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-21 19:37:59,947 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:37:59] "GET /skills HTTP/1.1" 200 -
+2024-11-21 19:37:59,994 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-21 19:37:59,994 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.age AS users_age, users.skills AS users_skills, users.career_interests AS users_career_interests, users.password AS users_password, users.reference_profile_id AS users_reference_profile_id, users.course AS users_course, users.university_id AS users_university_id, users.faculty AS users_faculty, users.duration AS users_duration 
+FROM users 
+WHERE users.id = ?
+2024-11-21 19:37:59,994 - sqlalchemy.engine.Engine - INFO - [cached since 4.52s ago] (6,)
+2024-11-21 19:37:59,994 - sqlalchemy.engine.Engine - INFO - SELECT reference_profiles.id AS reference_profiles_id, reference_profiles.name AS reference_profiles_name, reference_profiles.description AS reference_profiles_description, reference_profiles.dominance AS reference_profiles_dominance, reference_profiles.extraversion AS reference_profiles_extraversion, reference_profiles.patience AS reference_profiles_patience, reference_profiles.formality AS reference_profiles_formality 
+FROM reference_profiles 
+WHERE reference_profiles.id = ?
+2024-11-21 19:37:59,994 - sqlalchemy.engine.Engine - INFO - [cached since 4.518s ago] (1,)
+2024-11-21 19:37:59,994 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-21 19:37:59,994 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:37:59] "GET /user/profile HTTP/1.1" 200 -
+2024-11-21 19:38:25,162 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:38:25] "OPTIONS /login HTTP/1.1" 200 -
+2024-11-21 19:38:25,416 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-21 19:38:25,416 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.age AS users_age, users.skills AS users_skills, users.career_interests AS users_career_interests, users.password AS users_password, users.reference_profile_id AS users_reference_profile_id, users.course AS users_course, users.university_id AS users_university_id, users.faculty AS users_faculty, users.duration AS users_duration 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2024-11-21 19:38:25,416 - sqlalchemy.engine.Engine - INFO - [generated in 0.00054s] ('Jeffdunham@yahoo.com', 1, 0)
+2024-11-21 19:38:25,603 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-21 19:38:25,603 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:38:25] "POST /login HTTP/1.1" 200 -
+2024-11-21 19:38:25,618 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:38:25] "OPTIONS /user/profile HTTP/1.1" 200 -
+2024-11-21 19:38:25,926 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2024-11-21 19:38:25,926 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.age AS users_age, users.skills AS users_skills, users.career_interests AS users_career_interests, users.password AS users_password, users.reference_profile_id AS users_reference_profile_id, users.course AS users_course, users.university_id AS users_university_id, users.faculty AS users_faculty, users.duration AS users_duration 
+FROM users 
+WHERE users.id = ?
+2024-11-21 19:38:25,926 - sqlalchemy.engine.Engine - INFO - [cached since 30.45s ago] (6,)
+2024-11-21 19:38:25,926 - sqlalchemy.engine.Engine - INFO - SELECT reference_profiles.id AS reference_profiles_id, reference_profiles.name AS reference_profiles_name, reference_profiles.description AS reference_profiles_description, reference_profiles.dominance AS reference_profiles_dominance, reference_profiles.extraversion AS reference_profiles_extraversion, reference_profiles.patience AS reference_profiles_patience, reference_profiles.formality AS reference_profiles_formality 
+FROM reference_profiles 
+WHERE reference_profiles.id = ?
+2024-11-21 19:38:25,926 - sqlalchemy.engine.Engine - INFO - [cached since 30.44s ago] (1,)
+2024-11-21 19:38:25,926 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2024-11-21 19:38:25,926 - werkzeug - INFO - 127.0.0.1 - - [21/Nov/2024 19:38:25] "GET /user/profile HTTP/1.1" 200 -

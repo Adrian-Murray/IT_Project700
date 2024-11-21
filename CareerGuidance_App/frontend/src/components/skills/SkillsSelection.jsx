@@ -1,14 +1,18 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { api } from '../../utils/api';
+import { useAuth } from '../../context/AuthContext';
 import { Loader2, AlertCircle, CheckCircle } from 'lucide-react';
 
 function SkillsSelection() {
+  const navigate = useNavigate();
+  const { updateUserState } = useAuth();
   const [availableSkills, setAvailableSkills] = useState([]);
   const [selectedSkills, setSelectedSkills] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
-  const [success, setSuccess] = useState('');
   const [submitting, setSubmitting] = useState(false);
+  const [success] = useState('');
 
   useEffect(() => {
     const loadSkills = async () => {
@@ -42,14 +46,17 @@ function SkillsSelection() {
   const handleSubmit = async () => {
     setSubmitting(true);
     setError('');
-    setSuccess('');
     
     try {
-      await api.post('/submit_skills', {
+      const response = await api.post('/submit_skills', {
         skills: selectedSkills
       });
-      setSuccess('Skills updated successfully!');
-      setTimeout(() => setSuccess(''), 3000);
+
+      // Update user state with new skills
+      await updateUserState({ skills: selectedSkills });
+
+      // Navigate to dashboard
+      navigate('/dashboard');
     } catch (err) {
       setError(err.response?.data?.error || 'Failed to update skills');
     } finally {

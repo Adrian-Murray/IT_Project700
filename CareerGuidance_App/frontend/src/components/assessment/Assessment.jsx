@@ -2,17 +2,16 @@ import { useState } from 'react';
 import { api } from '../../utils/api';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import { Loader2 } from 'lucide-react';
 
 function Assessment() {
   const navigate = useNavigate();
-  const { refreshUser } = useAuth(); // Add this line
+  const { updateUserState } = useAuth();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [responses, setResponses] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [success, setSuccess] = useState('');
 
-  // Updated questions with properly mapped adjectives
   const questions = [
     {
       text: "How would you describe yourself?",
@@ -41,7 +40,7 @@ function Assessment() {
     }
   ];
 
- const handleResponse = async (option) => {
+  const handleResponse = async (option) => {
     const newResponses = [...responses, {
       adjective: option.toLowerCase().trim(),
       question_type: questions[currentQuestion].type
@@ -63,10 +62,11 @@ function Assessment() {
         responses: finalResponses
       });
 
-      // After successful submission, refresh user data and redirect
-      await refreshUser();
+      // Update the user state with the new profile
+      await updateUserState({ profile: response.data.profile });
+
+      // Navigate to skills selection
       navigate('/skills');
-      
     } catch (err) {
       console.error('Assessment submission error:', err);
       setError(err.response?.data?.error || 'Failed to submit assessment');
@@ -75,52 +75,52 @@ function Assessment() {
     }
   };
 
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-64">
+        <Loader2 className="h-8 w-8 animate-spin text-indigo-600" />
+      </div>
+    );
+  }
+
   return (
     <div className="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow">
       <h2 className="text-2xl font-bold mb-8">Personality Assessment</h2>
       
       {error && (
-        <div className="mb-4 p-4 bg-red-50 text-red-700 rounded-lg border border-red-200">
+        <div className="mb-4 p-4 bg-red-50 text-red-700 rounded-lg">
           {error}
         </div>
       )}
       
-      {success && (
-        <div className="mb-4 p-4 bg-green-50 text-green-700 rounded-lg border border-green-200">
-          {success}
-        </div>
-      )}
-      
-      {!success && (
-        <div>
-          <div className="mb-8">
-            <h3 className="text-xl mb-4">{questions[currentQuestion].text}</h3>
-            <div className="grid grid-cols-2 gap-4">
-              {questions[currentQuestion].options.map((option) => (
-                <button
-                  key={option}
-                  onClick={() => handleResponse(option)}
-                  disabled={loading}
-                  className="p-4 text-left border rounded-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-colors duration-200"
-                >
-                  <span className="capitalize">{option}</span>
-                </button>
-              ))}
-            </div>
-          </div>
-          <div className="mt-4 flex items-center justify-between">
-            <span className="text-sm text-gray-500">
-              Question {currentQuestion + 1} of {questions.length}
-            </span>
-            <div className="w-32 bg-gray-200 rounded-full h-2">
-              <div
-                className="bg-indigo-600 h-2 rounded-full transition-all duration-300"
-                style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
-              />
-            </div>
+      <div>
+        <div className="mb-8">
+          <h3 className="text-xl mb-4">{questions[currentQuestion].text}</h3>
+          <div className="grid grid-cols-2 gap-4">
+            {questions[currentQuestion].options.map((option) => (
+              <button
+                key={option}
+                onClick={() => handleResponse(option)}
+                disabled={loading}
+                className="p-4 text-left border rounded-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-colors duration-200"
+              >
+                <span className="capitalize">{option}</span>
+              </button>
+            ))}
           </div>
         </div>
-      )}
+        <div className="mt-4 flex items-center justify-between">
+          <span className="text-sm text-gray-500">
+            Question {currentQuestion + 1} of {questions.length}
+          </span>
+          <div className="w-32 bg-gray-200 rounded-full h-2">
+            <div
+              className="bg-indigo-600 h-2 rounded-full transition-all duration-300"
+              style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

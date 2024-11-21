@@ -21,21 +21,22 @@ export const AuthProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      refreshUser()
-        .catch(() => {
+    const initializeAuth = async () => {
+      const token = localStorage.getItem('token');
+      if (token) {
+        try {
+          await refreshUser();
+        } catch (error) {
           localStorage.removeItem('token');
           localStorage.removeItem('user');
           localStorage.removeItem('userId');
           setUser(null);
-        })
-        .finally(() => {
-          setLoading(false);
-        });
-    } else {
+        }
+      }
       setLoading(false);
-    }
+    };
+
+    initializeAuth();
   }, []);
 
   const login = async (userData, token) => {
@@ -43,10 +44,12 @@ export const AuthProvider = ({ children }) => {
     localStorage.setItem('userId', userData.id || userData.user_id);
     
     try {
-      await refreshUser();
+      const fullUserData = await refreshUser();
+      return fullUserData;
     } catch (error) {
       setUser(userData);
       localStorage.setItem('user', JSON.stringify(userData));
+      return userData;
     }
   };
 
@@ -57,8 +60,21 @@ export const AuthProvider = ({ children }) => {
     setUser(null);
   };
 
+  const updateUserState = (newData) => {
+    const updatedUser = { ...user, ...newData };
+    setUser(updatedUser);
+    localStorage.setItem('user', JSON.stringify(updatedUser));
+  };
+
   return (
-    <AuthContext.Provider value={{ user, loading, login, logout, refreshUser }}>
+    <AuthContext.Provider value={{ 
+      user, 
+      loading, 
+      login, 
+      logout, 
+      refreshUser, 
+      updateUserState 
+    }}>
       {children}
     </AuthContext.Provider>
   );
